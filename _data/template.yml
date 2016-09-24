@@ -3,8 +3,8 @@ color:
   primary: fed136 #Main default color
   secondary: fec503 #Button hover color
   secondary-dark: 333
-  friendly: 7f8c8d #Readable mid-grey color
-  muted: 777
+  friendly: 7f8c8d #Darker than muted grey color
+  muted: 777 #Faded grey-color
 
 # Font Families
 font:
