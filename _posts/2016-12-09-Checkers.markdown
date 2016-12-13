@@ -1,0 +1,26 @@
+---
+title: Baxter Plays Checkers
+subtitle: Software Development
+layout: default
+modal-id: 2
+date: 2016-12-09
+img: dreams.png
+thumbnail: RNAPrettyPicture.jpg
+alt: image-alt
+project-date: December 2016
+client: ME 495
+category: Software Development
+---
+<center><h3>Overview</h3></center>
+
+<center><h3>Demo</h3></center>
+
+<center><h3>Hardware Components</h3></center>
+
+
+<center><h3>Software Components</h3></center>
+
+<center><h3>My Teammates</h3></center>
+Gale Curry
+Tito Fernandez
+Gerik Zatorski

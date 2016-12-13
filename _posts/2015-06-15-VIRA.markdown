@@ -1,0 +1,50 @@
+---
+title: VIRA
+subtitle: Medical Devices
+layout: default
+modal-id: 1
+date: 2015-06-15
+img: dreams.png
+thumbnail: RNAPrettyPicture.jpg
+alt: image-alt
+project-date: October 2011 to June 2015
+client: Maputo Central Hospital
+category: Medical Devices
+description: A Cost-effective Nucleic Acid Analysis System
+---
+<center><h3>A Brief Overview</h3></center>
+Antiretroviral therapy (ART) is a strict drug regimen which combines multiple medications to impede HIV replication. When the treatment works, the concentration of HIV RNA in the bloodstream remains undetectable (at under 50 copies/mL). Routine viral load monitoring following the initiation of first-line ART is a recommended procedure which facilitates early detection of HIV drug resistance. It is also prohibitively expensive (a single genotyping assay can cost anywhere between $200-400), requires highly trained technicians and specialized laboratory equipment.
+
+While this price point is affordable in regions such as the U.S and Western Europe, lifelong treatment is unsustainable for patients in limited-resource settings. To compensate, doctors often track hematological, immunological and clinical parameters, which all too frequently respond to the presence of drug resistance after a lengthy time delay. The lag period between ART failure and correct diagnosis is a critical problem which exposes the patient to further immune system degeneration and facilitates the spread of mutant HIV strains.
+
+To confront these challenges, VIRA was created to provide physicians at Maputo Central Hospital with an open-source alternative for screening HIV patients for ART drug resistance.
+
+<center><h3>The System</h3></center>
+The VIRA diagnostic system is a semi-automated viral load monitoring device comprised of four key units: a low-cost centrifuge, an RNA extraction fluidic system, a PCR thermocycler, and a hermetic gel electrophoresis box. It is a versatile tool which allows minimally trained technicians to rapidly and accurately perform qualitative nucleic acid tests. To screen blood samples, VIRA runs an assay which follows the steps below:
+
+1. <b>Separate</b> blood plasma from patient blood sample
+2. <b>Isolate</b> RNA from blood plasma
+3. <b>Generate</b> cDNA from extracted RNA via reverse transcription
+4. <b>Amplify</b> trace amounts of cDNA using PCR
+5. <b>Purify</b> PCR amplicons using clean up kits
+6. <b>Verify</b> if amplicons obtained belong to HIV in 1% agarose gel via gel electrophoresis
+
+The complete system costs less than $2,000, minimizes technician input, and is simple to troubleshoot. Although VIRA is still undergoing clinical testing at the University of California, San Diego, once the prototype has been finalized, the assembly instructions for the device will be released online.
+
+<center><h3>The RNA Extraction Prototype</h3></center>
+<img src= "img/portfolio/fluidsys.png" width="1000" class="center">
+<center><b>Figure 1:</b> Illustration of RNA Prototype</center>
+<br>
+The RNA Extraction device is a fluidic system which semi-automates the process of isolating RNA from blood serum. The device uses a network of Arduino-controlled pneumatic pumps to replicate precision pipetting, and features an hermetic vacuum manifold coupled with a solenoid valve to separate mixtures in place of a microcentrifuge. For testing purposes, prototype 1.0 was designed to be compatible with Roche's High Pure Viral RNA Kit.
+
+<center><h3>The Thermocyler</h3></center>
+
+
+<center><h3>The Gel Electrophoresis Box</h3></center>
+Once the cDNA has been amplified, the sample is washed with a fluorescent nucleic acid stain such as ethidium bromide or SYBER Green.
+
+<center><h3>The Low-speed Centrifuge</h3></center>
+
+<center><h3>My Role</h3></center>
+Engineering World Health (EWH) at UCSD is a burgeoning undergraduate organization dedicated to designing alternative, low-cost laboratory equipment for indigent populations. When I was a freshman, I was brought onboard the VIRA flagship design team as a member of the RNA extraction device group. From 2014 to 2015, I was the RNA team lead. Prototype 1.0 was completed just before I graduated.
+
