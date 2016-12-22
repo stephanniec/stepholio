@@ -32,7 +32,7 @@ The complete system costs less than $2,000, minimizes technician input, and is s
 
 <center><h3>The RNA Extraction Prototype</h3></center>
 <img src= "img/portfolio/fluidsys.png" width="800" class="center">
-<center><b>Figure 1:</b> Illustration of the RNA Prototype.</center>Shelf 1 houses the user interface; shelf 2 holds the rest of the circuitry, which is represented here as a PCB; shelf 3 and 4 encase the pneumatic network; and shelf 5 positions the vacuum manifold and spin column underneath the metering line.<br>
+<center><b>Figure 1:</b> RNA Prototype Blueprint.</center>Shelf 1 houses the user interface; shelf 2 holds the rest of the circuitry, which is represented here as a PCB; shelf 3 and 4 encase the pneumatic network; and shelf 5 positions the vacuum manifold and spin column underneath the metering line.<br>
 <br>
 The RNA Extraction device is a fluidic system which semi-automates the process of isolating RNA from blood serum. The device uses a network of Arduino-controlled pneumatic pumps to replicate precision pipetting, and features an hermetic vacuum manifold coupled with a solenoid valve to separate mixtures in place of a microcentrifuge. For testing purposes, prototype 1.0 was designed to be compatible with Roche's High Pure Viral RNA Kit. Below is a slideshow of how the device has evolved over the years.
 
@@ -42,7 +42,6 @@ The RNA Extraction device is a fluidic system which semi-automates the process o
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
 </style>
-
 
 <center>
 <div class="w3-content w3-display-container" style="max-width:800px">
@@ -81,19 +80,20 @@ function currentDiv(n) {
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
+  var dots = document.getElementsByClassName("btn btn-primary");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
      x[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-red", "");
+     dots[i].className = dots[i].className.replace("btn btn-secondary", "");
   }
   x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-red";
+  dots[slideIndex-1].className += "btn btn-primary";
 }
 </script>
+
 <br>
 <center><h3>The Thermocyler</h3></center>
 
