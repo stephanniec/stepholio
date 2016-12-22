@@ -4,7 +4,6 @@ subtitle: Medical Devices
 layout: default
 modal-id: 1
 date: 2015-06-15
-img: dreams.png
 thumbnail: RNAPrettyPicture.jpg
 alt: image-alt
 project-date: October 2011 to June 2015
@@ -20,31 +19,120 @@ While this price point is affordable in regions such as the U.S and Western Euro
 To confront these challenges, VIRA was created to provide physicians at Maputo Central Hospital with an open-source alternative for screening HIV patients for ART drug resistance.
 
 <center><h3>The System</h3></center>
-The VIRA diagnostic system is a semi-automated viral load monitoring device comprised of four key units: a low-cost centrifuge, an RNA extraction fluidic system, a PCR thermocycler, and a hermetic gel electrophoresis box. It is a versatile tool which allows minimally trained technicians to rapidly and accurately perform qualitative nucleic acid tests. To screen blood samples, VIRA runs an assay which follows the steps below:
-
-1. <b>Separate</b> blood plasma from patient blood sample
-2. <b>Isolate</b> RNA from blood plasma
-3. <b>Generate</b> cDNA from extracted RNA via reverse transcription
-4. <b>Amplify</b> trace amounts of cDNA using PCR
-5. <b>Purify</b> PCR amplicons using clean up kits
-6. <b>Verify</b> if amplicons obtained belong to HIV in 1% agarose gel via gel electrophoresis
+The VIRA diagnostic system is a semi-automated viral load monitoring device comprised of four key units: a low-cost centrifuge, an RNA extraction fluidic system, a PCR thermocycler, and a hermetic gel electrophoresis box. It is a versatile tool which allows minimally trained technicians to rapidly and accurately perform qualitative nucleic acid tests. To screen blood samples, VIRA runs an assay which follows the steps below:<br>
+<br>
+1.<b>Separate</b> blood plasma from patient blood sample<br>
+2.<b>Isolate</b> RNA from blood plasma<br>
+3.<b>Generate</b> cDNA from extracted RNA via reverse transcription<br>
+4.<b>Amplify</b> trace amounts of cDNA using PCR<br>
+5.<b>Purify</b> PCR amplicons using clean up kits<br>
+6.<b>Verify</b> if amplicons obtained belong to HIV in 1% agarose gel via gel electrophoresis
 
 The complete system costs less than $2,000, minimizes technician input, and is simple to troubleshoot. Although VIRA is still undergoing clinical testing at the University of California, San Diego, once the prototype has been finalized, the assembly instructions for the device will be released online.
 
 <center><h3>The RNA Extraction Prototype</h3></center>
-<img src= "img/portfolio/fluidsys.png" width="1000" class="center">
-<center><b>Figure 1:</b> Illustration of RNA Prototype</center>
+<img src= "img/portfolio/fluidsys.png" width="800" class="center">
+<center><b>Figure 1:</b> Illustration of the RNA Prototype.</center>Shelf 1 houses the user interface; shelf 2 holds the rest of the circuitry, which is represented here as a PCB; shelf 3 and 4 encase the pneumatic network; and shelf 5 positions the vacuum manifold and spin column underneath the metering line.<br>
 <br>
-The RNA Extraction device is a fluidic system which semi-automates the process of isolating RNA from blood serum. The device uses a network of Arduino-controlled pneumatic pumps to replicate precision pipetting, and features an hermetic vacuum manifold coupled with a solenoid valve to separate mixtures in place of a microcentrifuge. For testing purposes, prototype 1.0 was designed to be compatible with Roche's High Pure Viral RNA Kit.
+The RNA Extraction device is a fluidic system which semi-automates the process of isolating RNA from blood serum. The device uses a network of Arduino-controlled pneumatic pumps to replicate precision pipetting, and features an hermetic vacuum manifold coupled with a solenoid valve to separate mixtures in place of a microcentrifuge. For testing purposes, prototype 1.0 was designed to be compatible with Roche's High Pure Viral RNA Kit. Below is a slideshow of how the device has evolved over the years.
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+
+
+<center>
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="img/portfolio/rna1p5.png" height="500">
+  <img class="mySlides" src="img/portfolio/rna2.png" height="500">
+  <img class="mySlides" src="img/portfolio/rna3.png" height="500">
+  <img class="mySlides" src="img/portfolio/rna4.png" height="500">
+  <img class="mySlides" src="img/portfolio/rna5.png" height="500">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+<!--    <button type="button" class="btn btn-primary" onclick="plusDivs(-1)">❮ Prev</button>
+    <button type="button" class="btn btn-primary" onclick="plusDivs(1)">Next ❯</button>-->
+  </div>
+  <button type="button" class="btn btn-primary" onclick="currentDiv(1)">2012</button>
+  <button type="button" class="btn btn-primary" onclick="currentDiv(2)">2013</button>
+  <button type="button" class="btn btn-primary" onclick="currentDiv(3)">2014</button>
+  <button type="button" class="btn btn-primary" onclick="currentDiv(4)">2015</button>
+  <button type="button" class="btn btn-primary" onclick="currentDiv(5)">2016</button>
+</div>
+</center>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+<br>
 <center><h3>The Thermocyler</h3></center>
 
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6">
+            <img src= "img/portfolio/pcr1.png" height="450" align="right">
+        </div>
+        <div class="col-lg-6 col-md-6">
+            <img src= "img/portfolio/pcr2.png" height="450" align="left">
+        </div>
+    </div>
+</div>
+
+<center><b>Figure 2:</b> (L) The 2013 Thermocycler Prototype (R) The 2016 Thermocycler Prototype</center>
+<br>
+VIRA's thermocycler features a customized PCB which controls a Peltier chip that heats and cools an aluminum block. Temperature cycling is adjusted based on feedback from sensors embedded in the device. As samples loop through enzyme-specific temperature ranges, different sets of primers which target HIV's <i>env</i> gene are activated. <i>Env</i> chosen because it codes for essential viral envelope proteins (gp120 and gp41) which HIV relies on to find and invade CD4 cells.
 
 <center><h3>The Gel Electrophoresis Box</h3></center>
-Once the cDNA has been amplified, the sample is washed with a fluorescent nucleic acid stain such as ethidium bromide or SYBER Green.
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-6">
+      <img src= "img/portfolio/gelmap.png" height="375">
+    </div>
+
+    <div class="col-lg-6 col-md-6">
+      <img src= "img/portfolio/gelbox.png" height="375">
+    </div>
+  </div>
+</div>
+<center><b>Figure 3:</b> (L) Gel Box CAD Drawing (R) The Final Gel Box Prototype</center>
+<br>
+To sort the cDNA amplicons produced, samples are first washed with a fluorescent nucleic acid stain - such as ethidium bromide or SYBER Green. Afterwards, the tagged DNA is loaded into a 1% agarose gel. An applied electric field is then used to separate the molecules by size. Under UV light, the presence or absence of a luminescent viral band will indicate whether or not a patient's ART regimen has failed. Note, although the design of VIRA's gel box mimics that of commercially available electrophoresis devices, the materials used to build the chamber are inexpensive.
 
 <center><h3>The Low-speed Centrifuge</h3></center>
 
 <center><h3>My Role</h3></center>
-Engineering World Health (EWH) at UCSD is a burgeoning undergraduate organization dedicated to designing alternative, low-cost laboratory equipment for indigent populations. When I was a freshman, I was brought onboard the VIRA flagship design team as a member of the RNA extraction device group. From 2014 to 2015, I was the RNA team lead. Prototype 1.0 was completed just before I graduated.
+<img src= "img/portfolio/ewhofficers.png" height="400" class="center">
+<center>2014-2015 Officers and Project Team Leads</center>
+<br>
+Engineering World Health (EWH) at UCSD is a burgeoning undergraduate organization dedicated to designing alternative, low-cost laboratory equipment for indigent populations. When I was a freshman, I was brought onboard the VIRA flagship design team as a member of the RNA extraction device group. From 2014 to 2015, I served as the RNA team lead. Prototype 1.0 was completed just before I graduated.
 

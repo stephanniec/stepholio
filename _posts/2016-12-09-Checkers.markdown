@@ -4,8 +4,7 @@ subtitle: Software Development
 layout: default
 modal-id: 2
 date: 2016-12-09
-img: dreams.png
-thumbnail: RNAPrettyPicture.jpg
+thumbnail: checkersicon.png
 alt: image-alt
 project-date: December 2016
 client: ME 495
