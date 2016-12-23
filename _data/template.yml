@@ -1,10 +1,10 @@
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 31d4d4 #Main light turquoise color
-  secondary: 24aeae #Button hover color; turquoise
-  secondary-dark: 333
-  friendly: 7f8c8d #Darker than muted grey color
-  muted: 777 #Faded grey-color
+  primary: 45b39d #Main turquoise color
+  secondary: b0e0d7 #Button hover color; soft blue
+  secondary-dark: 333 #Home section titles
+  friendly: 7f8c8d #Graphite grey
+  muted: 777 #Faded grey
   blind: fff #White
 
 # Font Families

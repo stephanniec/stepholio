@@ -13,6 +13,7 @@ category: Software Development
 <center><h3>Overview</h3></center>
 
 <center><h3>Demo</h3></center>
+To download the Checkers ROS package, please head on over to the <a href="https://github.com/enginerd887/Baxter-Checkers-ME495_2016">Baxter-Checkers-ME495_2016</a> Github repository.
 
 <center><h3>Hardware Components</h3></center>
 
@@ -20,6 +21,6 @@ category: Software Development
 <center><h3>Software Components</h3></center>
 
 <center><h3>My Teammates</h3></center>
-Gale Curry
-Tito Fernandez
-Gerik Zatorski
+<a href="https://github.com/gcurry730">Gale Curry</a><br>
+<a href="https://github.com/enginerd887">Tito Fernandez</a><br>
+<a href="https://github.com/gerikzatorski">Gerik Zatorski</a><br>
