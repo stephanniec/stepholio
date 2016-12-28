@@ -13,12 +13,13 @@ category: Software Development
 <center><h3>Overview</h3></center>
 
 <center><h3>Demo</h3></center>
+<video width="320" height="240" controls>
+  <source src="img/portfolio/2/onemove.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  Please view the Checkers demo clip on Vimeo using this <a href="https://vimeo.com/195051138">link</a>.
+</video>
+
 To download the Checkers ROS package, please head on over to the <a href="https://github.com/enginerd887/Baxter-Checkers-ME495_2016">Baxter-Checkers-ME495_2016</a> Github repository.
-
-<center><h3>Hardware Components</h3></center>
-
-
-<center><h3>Software Components</h3></center>
 
 <center><h3>My Teammates</h3></center>
 <a href="https://github.com/gcurry730">Gale Curry</a><br>

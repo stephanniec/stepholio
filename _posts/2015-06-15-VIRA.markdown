@@ -12,29 +12,29 @@ category: Medical Devices
 description: A Cost-effective Nucleic Acid Analysis System
 ---
 <center><h3>A Brief Overview</h3></center>
-Antiretroviral therapy (ART) is a strict drug regimen which combines multiple medications to impede HIV replication. When the treatment works, the concentration of HIV RNA in the bloodstream remains undetectable (at under 50 copies/mL). Routine viral load monitoring following the initiation of first-line ART is a recommended procedure which facilitates early detection of HIV drug resistance. It is also prohibitively expensive (a single genotyping assay can cost anywhere between $200-400), requires highly trained technicians and specialized laboratory equipment.
-
-While this price point is affordable in regions such as the U.S and Western Europe, lifelong treatment is unsustainable for patients in limited-resource settings. To compensate, doctors often track hematological, immunological and clinical parameters, which all too frequently respond to the presence of drug resistance after a lengthy time delay. The lag period between ART failure and correct diagnosis is a critical problem which exposes the patient to further immune system degeneration and facilitates the spread of mutant HIV strains.
-
+Antiretroviral therapy (ART) is a strict drug regimen which combines multiple medications to impede HIV replication. When the treatment works, the concentration of HIV RNA in the bloodstream remains undetectable (at under 50 copies/mL). Routine viral load monitoring following the initiation of first-line ART is a recommended procedure which facilitates early detection of HIV drug resistance. It is also prohibitively expensive (a single genotyping assay can cost anywhere between $200-400), requires highly trained technicians and specialized laboratory equipment.<br>
+<br>
+While these price points are affordable in regions such as the U.S and Western Europe, lifelong treatment is unsustainable for patients in limited-resource settings. To compensate, doctors often track hematological, immunological and clinical parameters, which all too frequently respond to the presence of drug resistance after a lengthy time delay. The lag period between ART failure and correct diagnosis is a critical problem which exposes the patient to further immune system degeneration and promotes the spread of mutant HIV strains.<br>
+<br>
 To confront these challenges, VIRA was created to provide physicians at Maputo Central Hospital with an open-source alternative for screening HIV patients for ART drug resistance.
 
 <center><h3>The System</h3></center>
-The VIRA diagnostic system is a semi-automated viral load monitoring device comprised of four key units: a low-cost centrifuge, an RNA extraction fluidic system, a PCR thermocycler, and a hermetic gel electrophoresis box. It is a versatile tool which allows minimally trained technicians to rapidly and accurately perform qualitative nucleic acid tests. To screen blood samples, VIRA runs an assay which follows the steps below:<br>
+The VIRA diagnostic system is a semi-automated viral load monitoring device comprised of four key units: a low-cost centrifuge, an RNA extraction fluidic system, a PCR thermocycler, and a gel electrophoresis box. It is a versatile tool which allows minimally trained technicians to rapidly and accurately perform qualitative nucleic acid tests. To screen blood samples, VIRA runs an assay which follows the steps below:<br>
 <br>
-1.<b>Separate</b> blood plasma from patient blood sample<br>
-2.<b>Isolate</b> RNA from blood plasma<br>
-3.<b>Generate</b> cDNA from extracted RNA via reverse transcription<br>
-4.<b>Amplify</b> trace amounts of cDNA using PCR<br>
-5.<b>Purify</b> PCR amplicons using clean up kits<br>
-6.<b>Verify</b> if amplicons obtained belong to HIV in 1% agarose gel via gel electrophoresis
-
-The complete system costs less than $2,000, minimizes technician input, and is simple to troubleshoot. Although VIRA is still undergoing clinical testing at the University of California, San Diego, once the prototype has been finalized, the assembly instructions for the device will be released online.
+1.<b> Separate</b> blood plasma from patient blood sample<br>
+2.<b> Isolate</b> RNA from blood plasma<br>
+3.<b> Generate</b> cDNA from extracted RNA via reverse transcription<br>
+4.<b> Amplify</b> trace amounts of cDNA using PCR<br>
+5.<b> Purify</b> PCR amplicons using clean up kits<br>
+6.<b> Verify</b> if amplicons obtained belong to HIV in 1% agarose gel via gel electrophoresis<br>
+<br>
+The complete system costs less than $2,000, minimizes technician input, and is simple to troubleshoot.
 
 <center><h3>The RNA Extraction Prototype</h3></center>
-<img src= "img/portfolio/fluidsys.png" width="800" class="center">
-<center><b>Figure 1:</b> RNA Prototype Blueprint.</center>Shelf 1 houses the user interface; shelf 2 holds the rest of the circuitry, which is represented here as a PCB; shelf 3 and 4 encase the pneumatic network; and shelf 5 positions the vacuum manifold and spin column underneath the metering line.<br>
+<img src= "img/portfolio/1/fluidsys.png" width="800" class="center">
+<center><b>Figure 1:</b> RNA Prototype Blueprint.</center>Shelf 1 houses the user interface; shelf 2 holds the rest of the circuitry, represented here as a PCB; shelf 3 and 4 encase the pneumatic network; and shelf 5 positions the vacuum manifold underneath the reagent metering line.<br>
 <br>
-The RNA Extraction device is a fluidic system which semi-automates the process of isolating RNA from blood serum. The device uses a network of Arduino-controlled pneumatic pumps to replicate precision pipetting, and features an hermetic vacuum manifold coupled with a solenoid valve to separate mixtures in place of a microcentrifuge. For testing purposes, prototype 1.0 was designed to be compatible with Roche's High Pure Viral RNA Kit. Below is a slideshow of how the device has evolved over the years.
+The RNA Extraction device is a fluidic system which semi-automates the process of isolating RNA from blood serum. It uses a network of Arduino-controlled pneumatic pumps to replicate precision pipetting, and features an hermetic vacuum manifold coupled with a solenoid valve to separate mixtures in place of a microcentrifuge. For testing purposes, prototype 1.0 was designed to be compatible with Roche’s High Pure Viral RNA Kit. Below is a slideshow of how the device has evolved over the years.
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -45,18 +45,14 @@ The RNA Extraction device is a fluidic system which semi-automates the process o
 
 <center>
 <div class="w3-content w3-display-container" style="max-width:800px">
-  <img class="mySlides" src="img/portfolio/rna1p5.png" height="500">
-  <img class="mySlides" src="img/portfolio/rna2.png" height="500">
-  <img class="mySlides" src="img/portfolio/rna3.png" height="500">
-  <img class="mySlides" src="img/portfolio/rna4.png" height="500">
-  <img class="mySlides" src="img/portfolio/rna5.png" height="500">
+  <img class="mySlides" src="img/portfolio/1/rna1p5.png" height="500">
+  <img class="mySlides" src="img/portfolio/1/rna2.png" height="500">
+  <img class="mySlides" src="img/portfolio/1/rna3.png" height="500">
+  <img class="mySlides" src="img/portfolio/1/rna4.png" height="500">
+  <img class="mySlides" src="img/portfolio/1/rna5.png" height="500">
 </div>
 
 <div class="w3-center">
-  <div class="w3-section">
-<!--    <button type="button" class="btn btn-primary" onclick="plusDivs(-1)">❮ Prev</button>
-    <button type="button" class="btn btn-primary" onclick="plusDivs(1)">Next ❯</button>-->
-  </div>
   <button type="button" class="btn btn-primary" onclick="currentDiv(1)">2012</button>
   <button type="button" class="btn btn-primary" onclick="currentDiv(2)">2013</button>
   <button type="button" class="btn btn-primary" onclick="currentDiv(3)">2014</button>
@@ -100,10 +96,10 @@ function showDivs(n) {
 <div class="container">
     <div class="row">
         <div class="col-lg-6 col-md-6">
-            <img src= "img/portfolio/pcr1.png" height="450" align="right">
+            <img src= "img/portfolio/1/pcr1.png" height="450" align="right">
         </div>
         <div class="col-lg-6 col-md-6">
-            <img src= "img/portfolio/pcr2.png" height="450" align="left">
+            <img src= "img/portfolio/1/pcr2.png" height="450" align="left">
         </div>
     </div>
 </div>
@@ -116,23 +112,25 @@ VIRA's thermocycler features a customized PCB which controls a Peltier chip that
 <div class="container">
   <div class="row">
     <div class="col-lg-6 col-md-6">
-      <img src= "img/portfolio/gelmap.png" height="375">
+      <img src= "img/portfolio/1/gelmap.png" height="375">
     </div>
 
     <div class="col-lg-6 col-md-6">
-      <img src= "img/portfolio/gelbox.png" height="375">
+      <img src= "img/portfolio/1/gelbox.png" height="375">
     </div>
   </div>
 </div>
 <center><b>Figure 3:</b> (L) Gel Box CAD Drawing (R) The Final Gel Box Prototype</center>
 <br>
-To sort the cDNA amplicons produced, samples are first washed with a fluorescent nucleic acid stain - such as ethidium bromide or SYBER Green. Afterwards, the tagged DNA is loaded into a 1% agarose gel. An applied electric field is then used to separate the molecules by size. Under UV light, the presence or absence of a luminescent viral band will indicate whether or not a patient's ART regimen has failed. Note, although the design of VIRA's gel box mimics that of commercially available electrophoresis devices, the materials used to build the chamber are inexpensive.
+To sort the amplicons produced, all samples are first washed with a fluorescent nucleic acid stain - such as ethidium bromide or SYBER Green. Afterwards, the tagged molecules are loaded into a 1% agarose gel. An applied electric field then separates the cDNA strands by size. Under UV light, the presence or absence of a luminescent viral band will indicate whether or not a patient’s ART regimen has failed. Although the design of VIRA’s gel box mimics that of commercially available electrophoresis devices, the chamber itself comes disassembled in the form of a DIY kit. This distribution method was chosen to further reduce manufacturing costs.
 
 <center><h3>The Low-speed Centrifuge</h3></center>
 
 <center><h3>My Role</h3></center>
-<img src= "img/portfolio/ewhofficers.png" height="400" class="center">
+<img src= "img/portfolio/1/ewhofficers.png" height="400" class="center">
 <center>2014-2015 Officers and Project Team Leads</center>
 <br>
 Engineering World Health (EWH) at UCSD is a burgeoning undergraduate organization dedicated to designing alternative, low-cost laboratory equipment for indigent populations. When I was a freshman, I was brought onboard the VIRA flagship design team as a member of the RNA extraction device group. From 2014 to 2015, I served as the RNA team lead. Prototype 1.0 was completed just before I graduated.
+
+<center><h3>Project Accolades</h3></center>
 
