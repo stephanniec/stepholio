@@ -12,7 +12,7 @@ category: Medical Devices
 description: A Cost-effective Nucleic Acid Analysis System
 ---
 <center><h3>A Brief Overview</h3></center>
-Antiretroviral therapy (ART) is a strict drug regimen which combines multiple medications to impede HIV replication. When the treatment works, the concentration of HIV RNA in the bloodstream remains undetectable (at under 50 copies/mL). Routine viral load monitoring following the initiation of first-line ART is a recommended procedure which facilitates early detection of HIV drug resistance. It is also prohibitively expensive (a single genotyping assay can cost anywhere between $200-400), requires highly trained technicians and specialized laboratory equipment.<br>
+Antiretroviral therapy (ART) is a strict drug regimen which combines multiple medications to impede HIV replication. When the treatment works, the concentration of HIV RNA in the bloodstream remains undetectable (at under 50 copies/mL). Routine viral load monitoring following the initiation of first-line ART is a recommended procedure which facilitates early detection of HIV drug resistance. It is also prohibitively expensive: a single genotyping assay can cost anywhere between $200-400, requires highly trained technicians and specialized laboratory equipment.<br>
 <br>
 While these price points are affordable in regions such as the U.S and Western Europe, lifelong treatment is unsustainable for patients in limited-resource settings. To compensate, doctors often track hematological, immunological and clinical parameters, which all too frequently respond to the presence of drug resistance after a lengthy time delay. The lag period between ART failure and correct diagnosis is a critical problem which exposes the patient to further immune system degeneration and promotes the spread of mutant HIV strains.<br>
 <br>
@@ -32,9 +32,9 @@ The complete system costs less than $2,000, minimizes technician input, and is s
 
 <center><h3>The RNA Extraction Prototype</h3></center>
 <img src= "img/portfolio/1/fluidsys.png" width="800" class="center">
-<center><b>Figure 1:</b> RNA Prototype Blueprint.</center>Shelf 1 houses the user interface; shelf 2 holds the rest of the circuitry, represented here as a PCB; shelf 3 and 4 encase the pneumatic network; and shelf 5 positions the vacuum manifold underneath the reagent metering line.<br>
+<center><b>Figure 1:</b> RNA Prototype Blueprint. Shelf 1 houses the user interface; shelf 2 holds the PCB; shelves 3 and 4 encase the pneumatic network; and shelf 5 positions the vacuum manifold underneath the reagent metering line.</center>
 <br>
-The RNA Extraction device is a fluidic system which semi-automates the process of isolating RNA from blood serum. It uses a network of Arduino-controlled pneumatic pumps to replicate precision pipetting, and features an hermetic vacuum manifold coupled with a solenoid valve to separate mixtures in place of a microcentrifuge. For testing purposes, prototype 1.0 was designed to be compatible with Roche’s High Pure Viral RNA Kit. Below is a slideshow of how the device has evolved over the years.
+The RNA Extraction device is a fluidic system which semi-automates the process of isolating RNA from blood serum. It uses a network of Arduino-controlled pneumatic pumps to replicate precision pipetting, and features a hermetic vacuum manifold coupled with a solenoid valve to separate mixtures in place of a microcentrifuge. For testing purposes, prototype 1.0 was designed to be compatible with Roche’s High Pure Viral RNA Kit. Below is a slideshow of how the device has evolved over the years.
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -106,7 +106,7 @@ function showDivs(n) {
 
 <center><b>Figure 2:</b> (L) The 2013 Thermocycler Prototype (R) The 2016 Thermocycler Prototype</center>
 <br>
-VIRA's thermocycler features a customized PCB which controls a Peltier chip that heats and cools an aluminum block. Temperature cycling is adjusted based on feedback from sensors embedded in the device. As samples loop through enzyme-specific temperature ranges, different sets of primers which target HIV's <i>env</i> gene are activated. <i>Env</i> chosen because it codes for essential viral envelope proteins (gp120 and gp41) which HIV relies on to find and invade CD4 cells.
+VIRA's thermocycler features a customized PCB which controls a Peltier chip that heats and cools an aluminum block. Temperature cycling is adjusted based on feedback from sensors embedded in the device. As samples loop through enzyme-specific temperature ranges, different sets of primers which target HIV's <i>env</i> gene are activated. We chose <i>env</i> because it codes for essential viral envelope proteins (gp120 and gp41) which HIV relies on to find and invade CD4 cells.
 
 <center><h3>The Gel Electrophoresis Box</h3></center>
 <div class="container">
@@ -122,7 +122,7 @@ VIRA's thermocycler features a customized PCB which controls a Peltier chip that
 </div>
 <center><b>Figure 3:</b> (L) Gel Box CAD Drawing (R) The Final Gel Box Prototype</center>
 <br>
-To sort the amplicons produced, all samples are first washed with a fluorescent nucleic acid stain - such as ethidium bromide or SYBER Green. Afterwards, the tagged molecules are loaded into a 1% agarose gel. An applied electric field then separates the cDNA strands by size. Under UV light, the presence or absence of a luminescent viral band will indicate whether or not a patient’s ART regimen has failed. Although the design of VIRA’s gel box mimics that of commercially available electrophoresis devices, the chamber itself comes disassembled in the form of a DIY kit. This distribution method was chosen to further reduce manufacturing costs.
+Although VIRA’s gel box mimics available electrophoresis devices, our product is unique in that the chassis comes disassembled in the form of a DIY kit. This distribution method was selected to reduce manufacturing costs, as well as provide interested members of the general public with an interactive opportunity to learn about extant medical devices and basic design techniques.
 
 <center><h3>The Low-speed Centrifuge</h3></center>
 
