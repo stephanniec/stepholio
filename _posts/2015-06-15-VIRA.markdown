@@ -11,7 +11,7 @@ client: Maputo Central Hospital
 category: Medical Devices
 description: A Cost-effective Nucleic Acid Analysis System
 ---
-<center><h3>A Brief Overview</h3></center>
+<center><h3>Overview</h3></center>
 Antiretroviral therapy (ART) is a strict drug regimen which combines multiple medications to impede HIV replication. When the treatment works, the concentration of HIV RNA in the bloodstream remains undetectable (at under 50 copies/mL). Routine viral load monitoring following the initiation of first-line ART is a recommended procedure which facilitates early detection of HIV drug resistance. It is also prohibitively expensive: a single genotyping assay can cost anywhere between $200-400, requires highly trained technicians and specialized laboratory equipment.<br>
 <br>
 While these price points are affordable in developed regions, such as the U.S and Western Europe, lifelong treatment is unsustainable for patients in limited-resource settings. To compensate, doctors have been known to track less demanding hematological and immunological <a href="http://www.who.int/bulletin/volumes/90/12/12-102780/en/">parameters</a>, which oftentimes respond to the presence of drug resistance after a lengthy time delay. The lag period between ART failure and correct diagnosis is a critical problem which exposes the patient to further immune system degeneration and promotes the spread of mutant HIV strains.<br>

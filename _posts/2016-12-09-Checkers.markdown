@@ -2,7 +2,7 @@
 title: Baxter Plays Checkers
 subtitle: Software Development
 layout: default
-modal-id: 2
+modal-id: 3
 date: 2016-12-09
 thumbnail: checkersicon.png
 alt: image-alt
@@ -11,19 +11,18 @@ client: ME 495 Embedded Systems in Robotics
 category: Software Development
 ---
 <center><h3>Overview</h3></center>
-Baxter Plays Checkers was created for the ME 495 robot part-manipulation competition at Northwestern. During the final exam, teams comprised of 4-6 students were asked to showcase a fun and original demonstration using a Baxter Research Robot to pick up, and place objects.
+Baxter Plays Checkers was created for the ME 495 robot part-manipulation competition at Northwestern. During the final exam, teams comprised of 4-6 students were asked to showcase a fun and original demonstration using a Baxter Research Robot to pick up and place objects.
 
-Checkers is a ROS Python package which grants Baxter the ability to play the aforementioned game against a human opponent. The software features a 5 node network which helps Baxter autonomously recognize the state of the game board, compute valid moves, and accurately transport red checkers pieces using inverse kinematics and OpenCV.
+Checkers is a ROS Python package which grants Baxter the ability to play the aforementioned game against a human opponent. The software features a 5 node network which helps Baxter autonomously recognize the state of the game, compute valid moves, and accurately transport red checkers pieces between squares using inverse kinematics and OpenCV. Below is a video of Baxter responding to a move.
 
 <center><h3>Demo</h3></center>
-Below is a video of Baxter responding to a move.
-
 <center><iframe src="https://player.vimeo.com/video/195051138" width="500" height="700" frameborder="0" volume="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/195051138">BaxtersMove</a> from <a href="https://vimeo.com/numsr">MSR at Northwestern</a> on <a href="https://vimeo.com">Vimeo</a>.</p></center>
 
-To download or read more about the Checkers ROS package, please head on over to the <a href="https://github.com/enginerd887/Baxter-Checkers-ME495_2016">Baxter-Checkers-ME495_2016</a> Github repository.
-
 <center><h3>My Teammates</h3></center>
-<a href="https://github.com/gcurry730">Gale Curry</a><br>
-<a href="https://github.com/enginerd887">Tito Fernandez</a><br>
+<a href="https://github.com/gcurry730">Gale Curry</a>
+<a href="https://github.com/enginerd887">Tito Fernandez</a>
 <a href="https://github.com/gerikzatorski">Gerik Zatorski</a><br>
+
+<center><h3>Related Resources</h3></center>
+To download or read more about the Checkers ROS package, please head on over to the <a href="https://github.com/enginerd887/Baxter-Checkers-ME495_2016">Baxter-Checkers-ME495_2016</a> Github repository.
