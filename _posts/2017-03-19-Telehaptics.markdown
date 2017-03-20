@@ -20,7 +20,10 @@ Telehaptics is a ROS Python package which brings to life a basic haptic interfac
 <b>Geomagic Touch</b> (formerly the Phantom Omni)<br>
 The <a href="http://www.geomagic.com/en/products/phantom-omni/overview">Geomagic Touch</a> is a compact motorized device which can provide up to 3 degrees of freedom of force feedback in the x, y, and z direction.
 
-<center><h3>Nodes</h3></center><br>
+<center><h3>Node Network</h3></center><br>
+
+<img src="img/portfolio/5/telehaptics_nodenetwork1.png" width="800" class="center">
+
 <b>drawshape_ui.py</b><br>
 Subscribed topics: 'give_move'<br>
 Published topics: 'ui_output', 'sent_move'
