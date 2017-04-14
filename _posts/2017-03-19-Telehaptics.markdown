@@ -1,5 +1,5 @@
 ---
-title: Haptics Feedback and Remote Control of Baxter
+title: Haptic Feedback and Remote Control of a Robotic Arm
 subtitle: Human-Machine Interaction
 layout: default
 modal-id: 5
@@ -16,31 +16,32 @@ Haptic perception is an intrinsic facet of the somatosensory system which grants
 
 Telehaptics is a ROS Python package which brings to life a basic haptic interface using a Baxter research robot and the Geomagic Touch. When the stylus of a Touch is moved, Baxter's right arm will trace the same motions performed. If an external force is applied to the arm, the Touch will remotely apply the same forces to the user's hand. Together, these components form a closed-loop biofeedback system which enables users to experience something akin to telekinesis.
 
+Note, this package is also compatible with the Sawyer research robot.
+
+<center><h3>Current Status</h3></center>
+<img src="img/portfolio/5/joyvc_demo.gif" class="center"><br>
+The above gif showcases how well the velocity controller is able to chase the target frame as the user moves the goal configuration linearly in the x, y, and z directions and about the z-axis.
+
 <center><h3>Hardware</h3></center>
 <b>Geomagic Touch</b> (formerly the Phantom Omni)<br>
 The <a href="http://www.geomagic.com/en/products/phantom-omni/overview">Geomagic Touch</a> is a compact motorized device which can provide up to 3 degrees of freedom of force feedback in the x, y, and z direction.
 
-<center><h3>Node Network</h3></center><br>
+<b>PS3 Console</b>
 
-<img src="img/portfolio/5/telehaptics_nodenetwork1.png" width="800" class="center">
+<b>Baxter or Sawyer from Rethink Robotics</b>
 
-<b>drawshape_ui.py</b><br>
-Subscribed topics: 'give_move'<br>
-Published topics: 'ui_output', 'sent_move'
+<center><h3>Key Nodes</h3></center><br>
+<b>joystick_reference_targets.py</b><br>
+Subscribed topics: 'joy'<br>
+Published topics: 'ref_pose'
 
-This node continually publishes the poses of a hardcoded trajectory to commander.py. When a boolean flag read from topic 'give_move' is true, the script will send out a new pose. Conversely, if the flag is false, the node will continue to issue the same pose to topic 'ui_output'. In the final product, this node will function differently. It will convert the pose of the Touch's end-effector to a scaled set of equivalent coordinates in Baxter's workspace, before publishing the new desired pose to 'ui_output'.
+This node uses the position of the PS3 sticks to create target end-effector poses. If the user attempts to drive the arm outside the defined workspace, the generated pose is clipped to the volume boundary. As a safety precaution, new configurations are only generated when the L1 button is pressed. This ensures that the arm will not move suddenly if the console is bumped accidentally.
 
-<b>commander.py</b><br>
-Subscribed topics: 'sent_move', 'ui_output', 'move_done'<br>
-Published topics: 'target_position', 'start_move', 'give_move'
+<b>velocity_control.py</b><br>
+Subscribed topics: 'ref_pose'<br>
+Sawyer equivalent: sawyer_velocity_control.py
 
-This node acts like the central nervous system of the Telehaptics package. When the program begins, it will first publish a home configuration to topic 'target_position'. Once Baxter's arm has returned home, the node will proceed to relay new Touch end-effector poses to the velocity controller in real-time.
-
-<b>velcon.py</b><br>
-Subscribed topics: 'start_move', '/robot/limb/right/endpoint_state', 'target_position'<br>
-Published topics: 'robot/limb/right/joint_command', 'move_done'
-
-This node performs inverse kinematics to find a set of joint angle velocites which will allow Baxter's right arm to reach a particular position in space. It constantly monitors topics 'target_position' and '/robot/limb/right/endpoint_state' to acquire the desired and current Baxter end-effector poses respectively. The script baxter_right_description.py provides the node with the home configuration and spatial screw axes of the right arm. These matrices are later used to derive the spatial Jacobian and twists for Baxter's current configuration - which can be related to angular velocity via the formula below:
+This node performs inverse kinematics to find a set of joint angle velocites which will allow Baxter's right arm to reach a particular position in space. It constantly monitors topic 'ref_pose' to acquire the desired end-effector state. The script baxter_right_description.py provides the node with the home configuration and spatial screw axes of the right arm. These matrices are later used to derive the body Jacobian and twists for Baxter's current configuration using the formula below:
 
 <img src="img/portfolio/5/jacobiantwist.png" class="center">
 
@@ -48,14 +49,23 @@ Note, when the pose desired is unreachable or near a singularity, using the pseu
 
 <img src="img/portfolio/5/leastsqreqn.png" class="center">
 
-In the equation shown above, q_dot is a matrix of joint velocities while lambda represents a damping parameter. Note, in this node, the value of lambda (0.005) was found empirically.
+In the equation shown above, q_dot is a matrix of joint velocities while lambda represents a damping parameter. In this node, the value of lambda (0.005) was found empirically.
+
+<b>gripper_control.py</b><br>
+Subscribed topics: 'joy'<br>
+Sawyer equivalent: sawyer_gripper_control.py
+
+This node controls Baxter's right gripper when the L1 button is held down. It closes the robot's hand when the R1 button is pressed.
 
 <center><h3>Launch Files</h3></center><br>
 <b>simstate.launch</b> |
 This file brings up an rviz simulation of Baxter as well as a gui which enables users to manipulate and view individual joint angles.
 
-<b>telehaptics.launch</b> |
-This file simultaneously launches all of the nodes needed to run the full Telehaptics package.
+<b>joysys.launch</b> |
+This file simultaneously launches all of the nodes needed to run the joystick velocity control demonstration on Baxter. It pulls up an rviz simulation which shows the location of the goal end-effector pose and Baxter's movements as the arm chases down the target frame controlled by the user in real-time.
+
+<b>sawyer_joysys.launch</b> |
+This file performs the same actions as joysys.launch, except for Saywer.
 
 <center><h3>Related Resources</h3></center>
 To download or read more about the Telehaptics ROS package, please head on over to the <a href="https://github.com/stephanniec/baxter_telehaptics">baxter_telehaptics</a> Github repository.
