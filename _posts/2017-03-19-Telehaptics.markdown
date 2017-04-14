@@ -20,22 +20,22 @@ Note, this package is also compatible with the Sawyer research robot.
 
 <center><h3>Current Status</h3></center>
 <img src="img/portfolio/5/joyvc_demo.gif" class="center"><br>
-The above gif showcases how well the velocity controller is able to chase the target frame as the user moves the goal configuration linearly in the x, y, and z directions and about the z-axis.
+The above gif showcases how accurately the velocity controller is able to follow the target frame as the user moves the goal configuration linearly in the x, y, and z directions and about the z-axis.
 
 <center><h3>Hardware</h3></center>
 <b>Geomagic Touch</b> (formerly the Phantom Omni)<br>
 The <a href="http://www.geomagic.com/en/products/phantom-omni/overview">Geomagic Touch</a> is a compact motorized device which can provide up to 3 degrees of freedom of force feedback in the x, y, and z direction.
 
-<b>PS3 Console</b>
+<b>PS3 Controller</b>
 
-<b>Baxter or Sawyer from Rethink Robotics</b>
+<b>Baxter or Sawyer Robot from Rethink Robotics</b>
 
 <center><h3>Key Nodes</h3></center><br>
 <b>joystick_reference_targets.py</b><br>
 Subscribed topics: 'joy'<br>
 Published topics: 'ref_pose'
 
-This node uses the position of the PS3 sticks to create target end-effector poses. If the user attempts to drive the arm outside the defined workspace, the generated pose is clipped to the volume boundary. As a safety precaution, new configurations are only generated when the L1 button is pressed. This ensures that the arm will not move suddenly if the console is bumped accidentally.
+This node uses the position of the PS3 sticks to create target end-effector poses. If the user attempts to drive the arm out of the defined workspace, the generated pose is clipped to the volume boundary. As a safety precaution, new configurations are only generated when the L1 button is pressed. This ensures that the arm will not move suddenly if the controller is bumped or dropped accidentally.
 
 <b>velocity_control.py</b><br>
 Subscribed topics: 'ref_pose'<br>
@@ -45,7 +45,7 @@ This node performs inverse kinematics to find a set of joint angle velocites whi
 
 <img src="img/portfolio/5/jacobiantwist.png" class="center">
 
-Note, when the pose desired is unreachable or near a singularity, using the pseudoinverse of the Jacobian to find joint velocities may cause the system to become unstable. This is because the Jacobian only uses first-order expressions to approximate end-effector movements. One work around involves using the damped least-squares (DLS) inverse of the Jacobian to compute joint velocities.
+When the pose desired is unreachable or near a singularity, using the pseudoinverse of the Jacobian to find joint velocities may cause the system to become unstable. This is because the Jacobian only uses first-order expressions to approximate end-effector movements. One work around involves using the damped least-squares (DLS) inverse of the Jacobian to compute joint velocities.
 
 <img src="img/portfolio/5/leastsqreqn.png" class="center">
 
@@ -56,6 +56,18 @@ Subscribed topics: 'joy'<br>
 Sawyer equivalent: sawyer_gripper_control.py
 
 This node controls Baxter's right gripper when the L1 button is held down. It closes the robot's hand when the R1 button is pressed.
+
+<center><h3>PS3 Controls</h3></center>
+
+<img src="img/portfolio/5/ps3_controls.png" class="center">
+
+<b>L1 button</b> || Hold down to enable robot movement<br>
+<b>R1 button</b> || Hold down to close robot end-effector<br>
+
+<b>Left stick (L/R)</b> || Horizontal movement along the Y-axis<br>
+<b>Left stick (U/D)</b> || Vertical movement along the Z-axis<br>
+<b>Right stick (U/D)</b> || Horizontal movement towards or away from user along the X-axis<br>
+<b>Right stick (L/R)</b> || Rotates the gripper clockwise or counterclockwise
 
 <center><h3>Launch Files</h3></center><br>
 <b>simstate.launch</b> |
