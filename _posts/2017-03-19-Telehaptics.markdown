@@ -61,13 +61,13 @@ This node controls Baxter's right gripper when the L1 button is held down. It cl
 
 <img src="img/portfolio/5/ps3_controls.png" class="center">
 
-<b>L1 button</b> || Hold down to enable robot movement<br>
-<b>R1 button</b> || Hold down to close robot end-effector<br>
+<b>L1 button</b> | Hold down to enable robot movement<br>
+<b>R1 button</b> | Hold down to close robot end-effector<br><br>
 
-<b>Left stick (L/R)</b> || Horizontal movement along the Y-axis<br>
-<b>Left stick (U/D)</b> || Vertical movement along the Z-axis<br>
-<b>Right stick (U/D)</b> || Horizontal movement towards or away from user along the X-axis<br>
-<b>Right stick (L/R)</b> || Rotates the gripper clockwise or counterclockwise
+<b>Left stick (L/R)</b> | Horizontal movement along the Y-axis<br>
+<b>Left stick (U/D)</b> | Vertical movement along the Z-axis<br>
+<b>Right stick (U/D)</b> | Horizontal movement towards or away from user along the X-axis<br>
+<b>Right stick (L/R)</b> | Rotates the gripper clockwise or counterclockwise
 
 <center><h3>Launch Files</h3></center><br>
 <b>simstate.launch</b> |

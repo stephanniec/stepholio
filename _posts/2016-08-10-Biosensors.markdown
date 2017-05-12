@@ -16,9 +16,12 @@ Cardiac hypertrophy is an adaptive response which refers to the enlargement and 
 
 <center><h3>Sensor Biomechanics</h3></center>
 
+
 <center><h3>Preliminary Results</h3></center>
 
-<center><h3>Optimization</h3></center>
+
+<center><h3>Post-Graduation Optimization</h3></center>
+
 
 <center><h3>Acknowledgements</h3></center>
 <b>Advisors</b><br>
