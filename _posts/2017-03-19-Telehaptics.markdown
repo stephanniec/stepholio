@@ -9,7 +9,7 @@ alt: image-alt
 project-date: January 2017- May 2017
 client: Northwestern MSR
 category: Human-Machine Interaction
-description: An interface which allows human users to feel what robots feel
+description: An intuitive interface which allows human users to feel what robots feel
 ---
 <center><h3>Overview</h3></center>
 Haptic perception is an intrinsic facet of the somatosensory system which grants humans the ability to discern valuable information about the shape, orientation, and texture of objects in the world. Without it, even simple motor tasks can become frustratingly difficult to perform. The lack of tactile feedback in commercially-available prosthetics and teleoperated devices is a debilitating obstacle which prevents amputees, technicians and surgeons from moving naturally and dexterously with artificial limbs.
@@ -20,7 +20,7 @@ Note, this package is also compatible with the Sawyer research robot.
 
 <center><h3>Current Status</h3></center>
 <img src="img/portfolio/5/joyvc_demo.gif" class="center"><br>
-The above gif showcases how accurately the velocity controller is able to follow the target frame as the user moves the goal configuration linearly in the x, y, and z directions and about the z-axis.
+The above GIF showcases how accurately the velocity controller is able to follow the target frame as the user moves the goal configuration linearly in the x, y, and z directions and about the z-axis.
 
 <center><h3>Hardware</h3></center>
 <b>Geomagic Touch</b> (formerly the Phantom Omni)<br>
@@ -28,8 +28,8 @@ The <a href="http://www.geomagic.com/en/products/phantom-omni/overview">Geomagic
 
 <b>PS3 DUALSHOCK3 Controller</b>
 
-<b>Rethink Robotics Baxter or Sawyer Robot</b>
-Baxter and Sawyer are two robots developed by <a href="http://www.rethinkrobotics.com/">Rethink Robotics</a> which sport 7 degree of freedom anthropomorphic arms. 
+<b>Rethink Robotics Baxter or Sawyer Robot</b><br>
+Baxter and Sawyer are two robots developed by <a href="http://www.rethinkrobotics.com/">Rethink Robotics</a> which sport 7 degree of freedom anthropomorphic arms.
 
 <center><h3>PS3 Controller Nodes</h3></center><br>
 <b>joystick_reference_targets.py</b><br>
@@ -42,7 +42,7 @@ This node uses the position of the PS3 sticks to create target end-effector pose
 Subscribed topics: `ref_pose`<br>
 Sawyer equivalent: `sawyer_velocity_control.py`
 
-This node performs inverse kinematics to find a set of joint angle velocites which will allow Baxter's right arm to reach a particular position in space. It constantly monitors topic `ref_pose` to acquire the desired end-effector state. The script baxter_right_description.py provides the node with the home configuration and spatial screw axes of the right arm. These matrices are later used to derive the body Jacobian and twists for Baxter's current configuration using the formula below:
+This node performs inverse kinematics to find a set of joint angle velocities which will allow Baxter's right arm to reach a particular position in space. It constantly monitors topic `ref_pose` to acquire the desired end-effector state. The script baxter_right_description.py provides the node with the home configuration and spatial screw axes of the right arm. These matrices are later used to derive the body Jacobian and twists for Baxter's current configuration using the formula below:
 
 <img src="img/portfolio/5/jacobiantwist.png" class="center">
 
@@ -87,13 +87,13 @@ Right stick (L/R) : Rotates the gripper clockwise or counterclockwise
 
 <center><h3>Launch Files</h3></center><br>
 `simstate.launch` |
-This file brings up an rviz simulation of Baxter as well as a gui which enables users to manipulate and view individual joint angles.
+This file brings up an rviz simulation of Baxter as well as a GUI which enables users to manipulate and view individual joint angles.
 
 `joysys.launch` |
 This file simultaneously launches all of the nodes needed to run the joystick velocity control demonstration on Baxter. It pulls up an rviz simulation which shows the location of the goal end-effector pose and Baxter's movements as the arm chases down the target frame controlled by the user in real-time.
 
 `sawyer_joysys.launch` |
-This file performs the same actions as joysys.launch, except for Saywer.
+This file performs the same actions as joysys.launch, except for Sawyer.
 
 `omnisys.launch` |
 This file simultaneously launches all of the nodes needed to run the Geomagic Touch velocity control demonstration on Baxter. It pulls up an rviz simulation which accurately displays where the Touch is positioned relative to Baxter in real life. It also streams the location of the goal end-effector pose and Baxter's movements as the user drives the target frame around in real-time.
