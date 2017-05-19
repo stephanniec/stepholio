@@ -6,7 +6,7 @@ modal-id: 5
 date: 2017-03-19
 thumbnail: telehapticstemp.png
 alt: image-alt
-project-date: January 2017- March 2017
+project-date: January 2017- May 2017
 client: Northwestern MSR
 category: Human-Machine Interaction
 description: An interface which allows human users to feel what robots feel
@@ -26,22 +26,22 @@ The above gif showcases how accurately the velocity controller is able to follow
 <b>Geomagic Touch</b> (formerly the Phantom Omni)<br>
 The <a href="http://www.geomagic.com/en/products/phantom-omni/overview">Geomagic Touch</a> is a compact motorized device which can provide up to 3 degrees of freedom of force feedback in the x, y, and z direction.
 
-<b>PS3 Controller</b>
+<b>PS3 DUALSHOCK3 Controller</b>
 
-<b>Baxter or Sawyer Robot from Rethink Robotics</b>
+<b>Rethink Robotics Baxter or Sawyer Robot</b>
 
-<center><h3>Key Nodes</h3></center><br>
+<center><h3>PS3 Controller Nodes</h3></center><br>
 <b>joystick_reference_targets.py</b><br>
-Subscribed topics: 'joy'<br>
-Published topics: 'ref_pose'
+Subscribed topics: `joy`<br>
+Published topics: `ref_pose`
 
 This node uses the position of the PS3 sticks to create target end-effector poses. If the user attempts to drive the arm out of the defined workspace, the generated pose is clipped to the volume boundary. As a safety precaution, new configurations are only generated when the L1 button is pressed. This ensures that the arm will not move suddenly if the controller is bumped or dropped accidentally.
 
 <b>velocity_control.py</b><br>
-Subscribed topics: 'ref_pose'<br>
-Sawyer equivalent: sawyer_velocity_control.py
+Subscribed topics: `ref_pose`<br>
+Sawyer equivalent: `sawyer_velocity_control.py`
 
-This node performs inverse kinematics to find a set of joint angle velocites which will allow Baxter's right arm to reach a particular position in space. It constantly monitors topic 'ref_pose' to acquire the desired end-effector state. The script baxter_right_description.py provides the node with the home configuration and spatial screw axes of the right arm. These matrices are later used to derive the body Jacobian and twists for Baxter's current configuration using the formula below:
+This node performs inverse kinematics to find a set of joint angle velocites which will allow Baxter's right arm to reach a particular position in space. It constantly monitors topic `ref_pose` to acquire the desired end-effector state. The script baxter_right_description.py provides the node with the home configuration and spatial screw axes of the right arm. These matrices are later used to derive the body Jacobian and twists for Baxter's current configuration using the formula below:
 
 <img src="img/portfolio/5/jacobiantwist.png" class="center">
 
@@ -52,32 +52,50 @@ When the pose desired is unreachable or near a singularity, using the pseudoinve
 In the equation shown above, q_dot is a matrix of joint velocities while lambda represents a damping parameter. In this node, the value of lambda (0.005) was found empirically.
 
 <b>gripper_control.py</b><br>
-Subscribed topics: 'joy'<br>
-Sawyer equivalent: sawyer_gripper_control.py
+Subscribed topics: `joy`<br>
+Sawyer equivalent: `sawyer_gripper_control.py`
 
-This node controls Baxter's right gripper when the L1 button is held down. It closes the robot's hand when the R1 button is pressed.
+This node controls Baxter's right gripper when the L1 button is held down. It closes the robot's hand when the R1 button is pressed simultaneously.
+
+<center><h3>Geomagic Touch Controller Nodes</h3></center><br>
+<b>omni_reference_targets2.py</b><br>
+Subscribed topics: `/omni1_joint_states`<br>
+Published topics: `/run_status`, `ref_pose`<br>
+
+This node uses the transform between the Touch's stylus frame to its base frame to create target end-effector poses. It maps rotations about the Touch's third wrist joint to rotations about the target frame's z-axis using JointState messages read from topic `/omni1_joint_states`. If the user attempts to drive the arm out of the defined workspace, the generated pose is clipped to the volume boundary. As a safety precaution, new configurations are only generated when the 's' start key on the keyboard has been pressed.
+
+<b>velocity_control.py</b><br>
+The velocity control script used to control Baxter with the Touch is the same as the one used by the PS3 controller.
+
+<b>omni_gripper_control.py</b><br>
+Subscribed topics: `/run_status`, `omni1_button`<br>
+This node controls Baxter's right gripper when the controller is enabled via the 's' start key. It closes the robot's hand when the white button on the Touch's stylus is held down.
 
 <center><h3>PS3 Controls</h3></center>
 
 <img src="img/portfolio/5/ps3_controls.png" class="center">
 
-<b>L1 button</b> | Hold down to enable robot movement<br>
-<b>R1 button</b> | Hold down to close robot end-effector<br><br>
-
-<b>Left stick (L/R)</b> | Horizontal movement along the Y-axis<br>
-<b>Left stick (U/D)</b> | Vertical movement along the Z-axis<br>
-<b>Right stick (U/D)</b> | Horizontal movement towards or away from user along the X-axis<br>
-<b>Right stick (L/R)</b> | Rotates the gripper clockwise or counterclockwise
+~~~
+L1 button : Hold down to enable robot movement
+R1 button : Hold down to close robot end-effector
+Left stick (L/R) : Horizontal movement along the Y-axis
+Left stick (U/D) : Vertical movement along the Z-axis
+Right stick (U/D) : Horizontal movement towards or away from user along the X-axis
+Right stick (L/R) : Rotates the gripper clockwise or counterclockwise
+~~~
 
 <center><h3>Launch Files</h3></center><br>
-<b>simstate.launch</b> |
+`simstate.launch` |
 This file brings up an rviz simulation of Baxter as well as a gui which enables users to manipulate and view individual joint angles.
 
-<b>joysys.launch</b> |
+`joysys.launch` |
 This file simultaneously launches all of the nodes needed to run the joystick velocity control demonstration on Baxter. It pulls up an rviz simulation which shows the location of the goal end-effector pose and Baxter's movements as the arm chases down the target frame controlled by the user in real-time.
 
-<b>sawyer_joysys.launch</b> |
+`sawyer_joysys.launch` |
 This file performs the same actions as joysys.launch, except for Saywer.
+
+`omnisys.launch` |
+This file simultaneously launches all of the nodes needed to run the Geomagic Touch velocity control demonstration on Baxter. It pulls up an rviz simulation which accurately displays where the Touch is positioned relative to Baxter in real life. It also streams the location of the goal end-effector pose and Baxter's movements as the user drives the target frame around in real-time.
 
 <center><h3>Related Resources</h3></center>
 To download or read more about the Telehaptics ROS package, please head on over to the <a href="https://github.com/stephanniec/baxter_telehaptics">baxter_telehaptics</a> Github repository.
@@ -85,5 +103,5 @@ To download or read more about the Telehaptics ROS package, please head on over 
 1. <a href="https://github.com/HuanWeng/ModernRobotics">ModernRobotics</a> Github repository
 2. <a href="https://github.com/gt-ros-pkg/hrl-kdl">hrl-kdl</a> Github repository
 3. S. Chiaverini, B. Siciliano, and O. Egeland, <a href="/files/leastsqrinvkin.pdf">Review of damped least-squares inverse kinematics with experiments on an industrial robot manipulator, IEEE Transactions on Control Systems Technology</a>, 2 (1994), pp. 123–134.
-4. <a href="https://github.com/MurpheyLab/trep_omni">Murphey Lab trep_omni</a> Github repository
-
+4. <a href="https://github.com/danepowell/phantom_omni">phantom_omni</a> Github repository
+5. <a href="https://github.com/MurpheyLab/trep_omni">trep_omni</a> Github repository
