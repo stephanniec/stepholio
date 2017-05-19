@@ -29,6 +29,7 @@ The <a href="http://www.geomagic.com/en/products/phantom-omni/overview">Geomagic
 <b>PS3 DUALSHOCK3 Controller</b>
 
 <b>Rethink Robotics Baxter or Sawyer Robot</b>
+Baxter and Sawyer are two robots developed by <a href="http://www.rethinkrobotics.com/">Rethink Robotics</a> which sport 7 degree of freedom anthropomorphic arms. 
 
 <center><h3>PS3 Controller Nodes</h3></center><br>
 <b>joystick_reference_targets.py</b><br>
