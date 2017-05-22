@@ -39,12 +39,9 @@ The RNA Extraction device is a fluidic system which semi-automates the process o
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
 </style>
 
-<center>
-<div class="w3-content w3-display-container" style="max-width:800px">
+<div class="slide-content w3-display-container" style="max-width:800px">
   <img class="mySlides" src="img/portfolio/1/rna1p5.png" height="500">
   <img class="mySlides" src="img/portfolio/1/rna2.png" height="500">
   <img class="mySlides" src="img/portfolio/1/rna3.png" height="500">
@@ -52,13 +49,12 @@ The RNA Extraction device is a fluidic system which semi-automates the process o
   <img class="mySlides" src="img/portfolio/1/rna5.png" height="500">
 </div>
 
-<div class="w3-center">
+<center>
   <button type="button" class="btn btn-primary" onclick="currentDiv(1)">2012</button>
   <button type="button" class="btn btn-primary" onclick="currentDiv(2)">2013</button>
   <button type="button" class="btn btn-primary" onclick="currentDiv(3)">2014</button>
   <button type="button" class="btn btn-primary" onclick="currentDiv(4)">2015</button>
   <button type="button" class="btn btn-primary" onclick="currentDiv(5)">2016</button>
-</div>
 </center>
 
 <script>
@@ -76,7 +72,7 @@ function currentDiv(n) {
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("btn btn-primary");
+  var dots = document.getElementsByClassName("btn-primary");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
