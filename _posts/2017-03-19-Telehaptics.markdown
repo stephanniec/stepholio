@@ -29,8 +29,8 @@ Note, this package is also compatible with the Sawyer research robot.
 <a href="#sources">Related Resources</a><br>
 
 <center><h3 id="status">Current Status</h3></center>
-<img src="img/portfolio/5/joyvc_demo.gif" class="center"><br>
-The above GIF showcases how accurately the velocity controller is able to follow the target frame as the user moves the goal configuration linearly in the x, y, and z directions and about the z-axis.
+<img src="img/portfolio/5/omnivc_demo.gif" class="center"><br>
+The above GIF showcases how accurately the velocity controller is able to follow the target frame as the user moves the goal configuration with the Geomagic Touch's stylus.
 
 <center><h3 id="hardware">Hardware</h3></center>
 <b>Geomagic Touch</b> (formerly the Phantom Omni)<br>
