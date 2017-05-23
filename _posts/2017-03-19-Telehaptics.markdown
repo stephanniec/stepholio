@@ -1,5 +1,5 @@
 ---
-title: Haptic Feedback and Remote Control of a Robotic Arm
+title: Geomagic Touch Driven Control of a Robotic Arm
 subtitle: Human-Machine Interaction
 layout: default
 modal-id: 5
