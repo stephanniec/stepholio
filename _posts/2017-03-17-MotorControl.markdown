@@ -4,7 +4,7 @@ subtitle: Mechatronics
 layout: default
 modal-id: 4
 date: 2017-03-19
-thumbnail: pic32motor_track.gif
+thumbnail: pic32_motor_track.gif
 alt: image-alt
 project-date: March 2017
 client: ME 333 Introduction to Mechatronics

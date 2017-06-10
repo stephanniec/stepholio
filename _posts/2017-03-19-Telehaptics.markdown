@@ -9,7 +9,7 @@ alt: image-alt
 project-date: January 2017 - May 2017
 client: Northwestern MSR
 category: Human-Machine Interaction
-description: An intuitive interface which allows human users to feel what robots feel
+description: An Intuitive Interface which Allows Human Users to Feel What Robots Feel
 ---
 <center><h3>Overview</h3></center>
 Haptic perception is an intrinsic facet of the somatosensory system which grants humans the ability to discern valuable information about the shape, orientation, and texture of objects in the world. Without it, even simple motor tasks can become frustratingly difficult to perform. The lack of tactile feedback in commercially-available prosthetics and teleoperated devices is a debilitating obstacle which prevents amputees, technicians and surgeons from moving naturally and dexterously with artificial limbs.

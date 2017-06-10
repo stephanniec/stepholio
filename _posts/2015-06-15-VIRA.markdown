@@ -4,7 +4,7 @@ subtitle: Medical Devices
 layout: default
 modal-id: 1
 date: 2015-06-15
-thumbnail: viratotal.png
+thumbnail: vira_icon.png
 alt: image-alt
 project-date: October 2011 to June 2015
 client: Maputo Central Hospital

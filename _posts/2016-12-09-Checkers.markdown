@@ -4,7 +4,7 @@ subtitle: Software Development
 layout: default
 modal-id: 3
 date: 2016-12-09
-thumbnail: checkersicon.png
+thumbnail: checkers_icon.png
 alt: image-alt
 project-date: December 2016
 client: ME 495 Embedded Systems in Robotics

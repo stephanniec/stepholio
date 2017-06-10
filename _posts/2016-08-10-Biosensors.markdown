@@ -4,7 +4,7 @@ subtitle: Medical Devices
 layout: default
 modal-id: 2
 date: 2016-08-10
-thumbnail: miR181icon.png
+thumbnail: miR181_icon.png
 alt: image-alt
 project-date: March 2014 - August 2016
 client: UCSD Department of Bioengineering
