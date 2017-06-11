@@ -29,7 +29,7 @@ Note, this package is also compatible with the Sawyer research robot.
 <a href="#sources">Related Resources</a><br>
 
 <center><h3 id="status">Current Status</h3></center>
-<img src="img/portfolio/5/omnivc_demo.gif" class="center"><br>
+<img src="img/portfolio/5/omnivc_demo.gif" class="img-responsive"><br>
 The above GIF showcases how accurately the velocity controller is able to follow the target frame as the user moves the goal configuration with the Geomagic Touch's stylus.
 
 <center><h3 id="hardware">Hardware</h3></center>
@@ -54,11 +54,11 @@ Sawyer equivalent: `sawyer_velocity_control.py`
 
 This node performs inverse kinematics to find a set of joint angle velocities which will allow Baxter's right arm to reach a particular position in space. It constantly monitors topic `ref_pose` to acquire the desired end-effector state. The script baxter_right_description.py provides the node with the home configuration and spatial screw axes of the right arm. These matrices are later used to derive the body Jacobian and twists for Baxter's current configuration using the formula below:
 
-<img src="img/portfolio/5/jacobiantwist.png" class="center">
+<img src="img/portfolio/5/jacobiantwist.png" class="img-responsive">
 
 When the pose desired is unreachable or near a singularity, using the pseudoinverse of the Jacobian to find joint velocities may cause the system to become unstable. This is because the Jacobian only uses first-order expressions to approximate end-effector movements. One work around involves using the damped least-squares (DLS) inverse of the Jacobian to compute joint velocities.
 
-<img src="img/portfolio/5/leastsqreqn.png" class="center">
+<img src="img/portfolio/5/leastsqreqn.png" class="img-responsive">
 
 In the equation shown above, q_dot is a matrix of joint velocities while lambda represents a damping parameter. In this node, the value of lambda (0.005) was found empirically.
 
@@ -84,7 +84,7 @@ This node controls Baxter's right gripper when the controller is enabled via the
 
 <center><h3 id="ps3con">PS3 Controls</h3></center>
 
-<img src="img/portfolio/5/ps3_controls.png" class="center">
+<img src="img/portfolio/5/ps3_controls.png" class="img-responsive">
 
 ~~~
 L1 button : Hold down to enable robot movement
