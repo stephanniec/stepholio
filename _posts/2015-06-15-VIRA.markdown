@@ -31,22 +31,22 @@ The VIRA diagnostic system is a semi-automated viral load monitoring device comp
 The complete system costs approximately $500 ($7 per test), minimizes technician input, and is simple to troubleshoot.
 
 <center><h3>The RNA Extraction Prototype</h3></center>
-<img src= "img/portfolio/1/fluidsys.png" width="800" class="img-responsive">
+<img src= "img/portfolio/1/fluidsys.png" class="img-responsive" width="900">
 <center><b>Figure 1:</b> RNA Prototype Blueprint. Shelf 1 houses the user interface; shelf 2 holds the PCB; shelves 3 and 4 encase the pneumatic network; and shelf 5 positions the vacuum manifold underneath the reagent metering line.</center>
 <br>
 The RNA Extraction device is a fluidic system which semi-automates the process of isolating RNA from blood serum. It uses a network of Arduino-controlled pneumatic pumps to replicate precision pipetting, and features a hermetic vacuum manifold coupled with a solenoid valve to separate mixtures in place of a microcentrifuge. For testing purposes, prototype 1.0 was designed to be compatible with Roche’s High Pure Viral RNA Kit. Below is a slideshow of how the device has evolved over the years.
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.mySlides {display:none}
+.mySlides {margin:0 auto;}
 </style>
 
 <div class="slide-content w3-display-container" style="max-width:800px">
-  <img class="mySlides" src="img/portfolio/1/rna1p5.png" height="500">
-  <img class="mySlides" src="img/portfolio/1/rna2.png" height="500">
-  <img class="mySlides" src="img/portfolio/1/rna3.png" height="500">
-  <img class="mySlides" src="img/portfolio/1/rna4.png" height="500">
-  <img class="mySlides" src="img/portfolio/1/rna5.png" height="500">
+  <img class="mySlides img-responsive" src="img/portfolio/1/rna1p5.png" style="width:60%">
+  <img class="mySlides img-responsive" src="img/portfolio/1/rna2.png" style="width:50%">
+  <img class="mySlides img-responsive" src="img/portfolio/1/rna3.png" style="width:80%">
+  <img class="mySlides img-responsive" src="img/portfolio/1/rna4.png" style="width:80%">
+  <img class="mySlides img-responsive" src="img/portfolio/1/rna5.png" style="width:130%">
 </div>
 
 <center>
@@ -88,45 +88,27 @@ function showDivs(n) {
 
 <br>
 <center><h3>The Thermocyler</h3></center>
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-6 col-md-6">
-            <img src= "img/portfolio/1/pcr1.png" class="img-responsive" height="450" width="400" align="right">
-        </div>
-        <div class="col-lg-6 col-md-6">
-            <img src= "img/portfolio/1/pcr2.png" class="img-responsive" height="450" width="375" align="left">
-        </div>
-    </div>
-</div>
+<img src= "img/portfolio/1/pcr.png" class="img-responsive" width="900">
 
 <center><b>Figure 2:</b> (L) The 2013 Thermocycler Prototype (R) The 2016 Thermocycler Prototype</center>
 <br>
 VIRA's thermocycler features a customized PCB which controls a Peltier chip that heats and cools an aluminum block. Temperature cycling is adjusted based on feedback from sensors embedded in the device. As samples loop through enzyme-specific temperature ranges, different sets of primers which target HIV's <i>env</i> gene are activated. We chose <i>env</i> because it codes for essential viral envelope proteins (gp120 and gp41) which HIV relies on to find and invade CD4 cells.
 
 <center><h3>The Gel Electrophoresis Box</h3></center>
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6 col-md-6">
-      <img src= "img/portfolio/1/gelmap.png" class="img-responsive" height="375">
-    </div>
-    <div class="col-lg-6 col-md-6">
-      <img src= "img/portfolio/1/gelbox.png" class="img-responsive" height="375" align="left">
-    </div>
-  </div>
-</div>
+<img src= "img/portfolio/1/gel.png" class="img-responsive" width="900">
+
 <center><b>Figure 3:</b> (L) Gel Box CAD Drawing (R) The Final Gel Box Prototype</center>
 <br>
 Although VIRA’s gel box mimics available electrophoresis devices, our product is unique in that the chassis comes disassembled in the form of a DIY kit. This distribution method was selected to reduce manufacturing costs, as well as provide interested members of the general public with an interactive opportunity to learn about extant medical devices and basic design techniques.
 
 <center><h3>The Low-speed Centrifuge</h3></center>
-<center><img src= "img/portfolio/1/centrifuge2.png" class="img-responsive" height="375">
+<center><img src= "img/portfolio/1/centrifuge2.png" class="img-responsive" width="650">
 <b>Figure 3:</b> The 2015 Centrifuge Prototype</center>
 <br>
 The low-speed centrifuge is an auxilary tool which can be used by technicians to perform both RNA extraction and reverse transcription. The prototype includes an ABS 3D printed plate head with an anti-shear design that interfaces with a simple motor. The alpha model, which now sits in Maputo Central Hospital, is capable of applying up to 8,000 x <i>g</i> and runs off of a self-sufficient power source. The latter feature was added to help clinics work through power outages, which regularly occur in Mozambique.
 
 <center><h3>My Role</h3></center>
-<img src= "img/portfolio/1/ewhofficers.png" class="img-responsive" height="400" class="center">
+<img src= "img/portfolio/1/ewhofficers.png" class="img-responsive" width="650">
 <center>2014-2015 Officers and Project Team Leads</center>
 <br>
 Engineering World Health (EWH) at UCSD is a burgeoning undergraduate organization dedicated to designing alternative, low-cost laboratory equipment for indigent populations. When I was a freshman, I was brought onboard the VIRA flagship design team as a member of the RNA extraction device group. From 2014 to 2015, I served as the RNA team lead. Prototype 1.0 was completed just before I graduated.
