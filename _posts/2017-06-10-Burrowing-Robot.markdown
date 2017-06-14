@@ -12,9 +12,14 @@ category: Mechatronics
 description: Exploring New Mechanisms for Moving Underground
 ---
 <center><h3>Overview</h3></center>
-Subterranean robotic navigation and operation is important to a sundry of tasks, such as mining, construction, reconnaissance and bomb detection. Although there are numerous robots available for working beneath snow and hard earth, less options exist for exploring spaces beneath granular media. To address this disparity, the burrowing robot project was launched to discover new methods for allowing robots to "fly" within sand.
+Subterranean robotic navigation and operation is important to a sundry of tasks, such as mining, construction, reconnaissance and bomb detection. Although there are numerous robots available for working beneath snow and hard earth, fewer options exist for exploring spaces beneath granular media. To address this disparity, the burrowing robot project was launched to discover new methods for allowing robots to "fly" within sand.
 
-<center><h3>Screw-Head Plane Prototype</h3></center>
+<center><h3>Table of Contents</h3></center>
+<a href="#plane_proto">I. Screw-Head Plane Prototype</a><br>
+<a href="#plane_eval">II. Screw-Head Prototype Performance</a><br>
+<a href="#cite">III. Acknowledgements</a>
+
+<center><h3 id="plane_proto">Screw-Head Plane Prototype</h3></center>
 <img src= "img/portfolio/7/screw_head_plane.png" width="600" class="img-responsive">
 This prototype consists of 5 main components. When powered, an Archimedes screw mounted at the head of the robot will spin to part granular media and pull the robot forward. This is attached to an adapter plate which fits snugly around a DC motor shaft. A cylindrical cap on the motor itself prevents granules from falling into the exposed gear box. Wedged inside the protective cap are wings which will prevent the body of the robot from rotating with the screw. Lastly, an elongated hemisphere housing unit covers the back of the robot to shield the soldered wire junctions from wear and tear.
 
@@ -26,11 +31,11 @@ This prototype consists of 5 main components. When powered, an Archimedes screw 
 
 <center><h4>Screw Heads</h4></center>
 <img src= "img/portfolio/7/screws.png" width="600" class="img-responsive">
-* 2-loop PLA 58.67mm
-* 3-loop PLA 58.67mm
-* 4-loop PLA 58.67mm
+* 2-turns PLA 58.67mm
+* 3-turns PLA 58.67mm
+* 4-turns PLA 58.67mm
 
-<center><h3>Screw-Head Prototype Performance</h3></center>
+<center><h3 id="plane_eval">Screw-Head Prototype Performance</h3></center>
 <b>TRIAL I</b><br>
 `Objective:` Test different wing and screw pitch permutations<br>
 `Tests`: Submerged swimming (I), Surface swimming (II), Burrowing (III) <br>
@@ -93,6 +98,6 @@ III. Robot was able to submerge itself completely. It briefly exhibited the abil
   * Change screw material (e.g. metal)
 2. Change power supply - existing supply (12V, 8.4A) is not variable
 
-<center><h3>Acknowledgements</h3></center>
+<center><h3 id="cite">Acknowledgements</h3></center>
 <a href="http://www.mccormick.northwestern.edu/research-faculty/directory/affiliated/umbanhowar-paul.html">Dr. Paul Umbanhowar</a><br>
 <a href="https://github.com/dlynch7">Dan Lynch</a>

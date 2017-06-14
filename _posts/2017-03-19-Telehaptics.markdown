@@ -54,13 +54,19 @@ Sawyer equivalent: `sawyer_velocity_control.py`
 
 This node performs inverse kinematics to find a set of joint angle velocities which will allow Baxter's right arm to reach a particular position in space. It constantly monitors topic `ref_pose` to acquire the desired end-effector state. The script baxter_right_description.py provides the node with the home configuration and spatial screw axes of the right arm. These matrices are later used to derive the body Jacobian and twists for Baxter's current configuration using the formula below:
 
-<img src="img/portfolio/5/jacobiantwist.png" class="img-responsive">
+\begin{equation}
+\Large
+\nu_b = J_b(\theta)\dot{\theta}
+\end{equation}
 
 When the pose desired is unreachable or near a singularity, using the pseudoinverse of the Jacobian to find joint velocities may cause the system to become unstable. This is because the Jacobian only uses first-order expressions to approximate end-effector movements. One work around involves using the damped least-squares (DLS) inverse of the Jacobian to compute joint velocities.
 
-<img src="img/portfolio/5/leastsqreqn.png" class="img-responsive">
+\begin{equation}
+\Large
+\dot{\theta}= (J(\theta)^{T}J(\theta) + \lambda^{2}I)^{-1}J(\theta)^{T}\nu
+\end{equation}
 
-In the equation shown above, q_dot is a matrix of joint velocities while lambda represents a damping parameter. In this node, the value of lambda (0.005) was found empirically.
+In the equation shown above, $$\dot{\theta}$$ is a matrix of joint velocities while lambda represents a damping parameter. In this node, the value of lambda (0.005) was found empirically.
 
 <b>gripper_control.py</b><br>
 Subscribed topics: `joy`<br>
