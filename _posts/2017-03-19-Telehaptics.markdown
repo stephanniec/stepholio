@@ -19,14 +19,14 @@ Telehaptics is a ROS Python package which brings to life a basic haptic interfac
 Note, this package is also compatible with the Sawyer research robot.
 
 <center><h3>Table of Contents</h3></center>
-<a href="#status">Current Status</a><br>
-<a href="#hardware">Hardware</a><br>
-<a href="#ps3_nodes">PS3 Controller Nodes</a><br>
-<a href="#omni_nodes">Geomagic Touch Controller Nodes</a><br>
-<a href="#ps3con">PS3 Controls</a><br>
-<a href="#omnicon">Geomagic Touch Controls</a><br>
-<a href="#launch">Launch Files</a><br>
-<a href="#sources">Related Resources</a><br>
+<a href="#status">I. Current Status</a><br>
+<a href="#hardware">II. Hardware</a><br>
+<a href="#ps3_nodes">III. PS3 Controller Nodes</a><br>
+<a href="#omni_nodes">IV. Geomagic Touch Controller Nodes</a><br>
+<a href="#ps3con">V. PS3 Controls</a><br>
+<a href="#omnicon">VI. Geomagic Touch Controls</a><br>
+<a href="#launch">VII. Launch Files</a><br>
+<a href="#sources">VIII. Related Resources</a><br>
 
 <center><h3 id="status">Current Status</h3></center>
 <img src="img/portfolio/5/omnivc_demo.gif" class="img-responsive"><br>
@@ -99,6 +99,15 @@ Left stick (L/R) : Horizontal movement along the Y-axis
 Left stick (U/D) : Vertical movement along the Z-axis
 Right stick (U/D) : Horizontal movement towards or away from user along the X-axis
 Right stick (L/R) : Rotates the gripper clockwise or counterclockwise
+~~~
+
+<center><h3 id="omnicon">Geomagic Touch Controls</h3></center>
+
+~~~
+1. Grip the stylus like you would hold a pencil with the metal tip pointed down
+2. Draw in the air where you would like the robot arm to go
+3. Twist the stylus to rotate the gripper
+4. Hold the white button to close the gripper
 ~~~
 
 <center><h3 id="launch">Launch Files</h3></center><br>

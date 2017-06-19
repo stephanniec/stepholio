@@ -38,23 +38,23 @@ The RNA Extraction device is a fluidic system which semi-automates the process o
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-.mySlides {margin:0 auto;}
+.mySlides {margin:0 auto; max-height:410px;}
 </style>
 
-<div class="slide-content w3-display-container" style="max-width:800px">
-  <img class="mySlides img-responsive" src="img/portfolio/1/rna1p5.png" style="width:60%">
-  <img class="mySlides img-responsive" src="img/portfolio/1/rna2.png" style="width:50%">
-  <img class="mySlides img-responsive" src="img/portfolio/1/rna3.png" style="width:80%">
-  <img class="mySlides img-responsive" src="img/portfolio/1/rna4.png" style="width:80%">
-  <img class="mySlides img-responsive" src="img/portfolio/1/rna5.png" style="width:130%">
+<div class="slide-content w3-display-container" style="max-width:900px;">
+  <img class="mySlides img-responsive" src="img/portfolio/1/rna1.png">
+  <img class="mySlides img-responsive" src="img/portfolio/1/rna2.png" style="height:">
+  <img class="mySlides img-responsive" src="img/portfolio/1/rna3.png">
+  <img class="mySlides img-responsive" src="img/portfolio/1/rna4.png">
+  <img class="mySlides img-responsive" src="img/portfolio/1/rna5.png">
 </div>
 
 <center>
   <button type="button" class="btn btn-primary" onclick="currentDiv(1)">2012</button>
   <button type="button" class="btn btn-primary" onclick="currentDiv(2)">2013</button>
-  <button type="button" class="btn btn-primary" onclick="currentDiv(3)">2014</button>
+  <button type="button" class="btn btn-primary" onclick="currentDiv(3)">2014 Chassis</button>
   <button type="button" class="btn btn-primary" onclick="currentDiv(4)">2015</button>
-  <button type="button" class="btn btn-primary" onclick="currentDiv(5)">2016</button>
+  <button type="button" class="btn btn-primary" onclick="currentDiv(5)">2016 Chassis</button>
 </center>
 
 <script>

@@ -17,7 +17,17 @@ description:
 <img src= "img/portfolio/6/techcup2017.png" width="600" class="img-responsive">
 
 <center><h3>Motor Control</h3></center>
-<center><iframe width="560" height="315" src="https://www.youtube.com/embed/R9pwJjqRXbo?ecver=1" frameborder="0" allowfullscreen></iframe></center>
+<div class="row">
+  <div class="col-lg-2 col-md-1">
+  </div>
+  <div class="col-lg-8 col-md-10 col-sm-12">
+    <div class="embed-responsive embed-responsive-16by9" style="center">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R9pwJjqRXbo?ecver=1" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-1">
+  </div>
+</div>
 
 <center><h3>Path Detection</h3></center>
 
@@ -29,10 +39,10 @@ description:
 </style>
 
 <div class="slide-content w3-display-container" style="max-width:800px">
-  <img class="slidesMod6 img-responsive" src= "img/portfolio/6/line_follow_car.png" width="800">
-  <img class="slidesMod6 img-responsive" src= "img/portfolio/6/car_cad.png" width="800">
-  <img class="slidesMod6 img-responsive" src="img/portfolio/6/4in_wheel_cad.png" width="800">
-  <img class="slidesMod6 img-responsive" src="img/portfolio/6/motor_bracket_cad.png" width="800">
+  <img class="slidesMod6 img-responsive" src= "img/portfolio/6/line_follow_car.png">
+  <img class="slidesMod6 img-responsive" src= "img/portfolio/6/car_cad.png">
+  <img class="slidesMod6 img-responsive" src="img/portfolio/6/4in_wheel_cad.png">
+  <img class="slidesMod6 img-responsive" src="img/portfolio/6/motor_bracket_cad.png">
 </div>
 
 <center>
