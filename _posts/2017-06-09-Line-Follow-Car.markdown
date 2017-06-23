@@ -30,6 +30,17 @@ description:
 </div>
 
 <center><h3>Path Detection</h3></center>
+<div class="row">
+  <div class="col-lg-2 col-md-1">
+  </div>
+  <div class="col-lg-8 col-md-10 col-sm-12">
+    <div class="embed-responsive embed-responsive-16by9" style="center">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=wmvf4Z9TsZw" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-1">
+  </div>
+</div>
 
 <center><h3>Hardware</h3></center>
 

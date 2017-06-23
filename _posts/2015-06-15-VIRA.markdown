@@ -32,16 +32,16 @@ The complete system costs approximately $500 ($7 per test), minimizes technician
 
 <center><h3>The RNA Extraction Prototype</h3></center>
 <img src= "img/portfolio/1/fluidsys.png" class="img-responsive" width="900">
-<center><b>Figure 1:</b> RNA Prototype Blueprint. Shelf 1 houses the user interface; shelf 2 holds the PCB; shelves 3 and 4 encase the pneumatic network; and shelf 5 positions the vacuum manifold underneath the reagent metering line.</center>
+<center><b>Figure 1:</b> RNA Prototype Blueprint. Shelf 1 houses the user interface; shelf 2 protects the circuitry; shelves 3 and 4 support the fluidic network; and shelf 5 positions the vacuum manifold underneath the reagent metering line.</center>
 <br>
-The RNA Extraction device is a fluidic system which semi-automates the process of isolating RNA from blood serum. It uses a network of Arduino-controlled pneumatic pumps to replicate precision pipetting, and features a hermetic vacuum manifold coupled with a solenoid valve to separate mixtures in place of a microcentrifuge. For testing purposes, prototype 1.0 was designed to be compatible with Roche’s High Pure Viral RNA Kit. Below is a slideshow of how the device has evolved over the years.
+The RNA Extraction device is a fluidic system which semi-automates the process of isolating RNA from blood serum. It uses a network of Arduino-controlled peristaltic pumps to replicate precision pipetting, and features a hermetic vacuum manifold coupled with a solenoid valve to separate mixtures in place of a microcentrifuge. For testing purposes, prototype 1.0 was designed to be compatible with Roche’s High Pure Viral RNA Kit. Below is a slideshow of how the device has evolved over the years.
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .mySlides {margin:0 auto; max-height:410px;}
 </style>
 
-<div class="slide-content w3-display-container" style="max-width:900px;">
+<div class="slide-content" style="max-width:900px;">
   <img class="mySlides img-responsive" src="img/portfolio/1/rna1.png">
   <img class="mySlides img-responsive" src="img/portfolio/1/rna2.png">
   <img class="mySlides img-responsive" src="img/portfolio/1/rna3.png">
