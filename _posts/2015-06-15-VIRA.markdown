@@ -43,7 +43,7 @@ The RNA Extraction device is a fluidic system which semi-automates the process o
 
 <div class="slide-content w3-display-container" style="max-width:900px;">
   <img class="mySlides img-responsive" src="img/portfolio/1/rna1.png">
-  <img class="mySlides img-responsive" src="img/portfolio/1/rna2.png" style="height:">
+  <img class="mySlides img-responsive" src="img/portfolio/1/rna2.png">
   <img class="mySlides img-responsive" src="img/portfolio/1/rna3.png">
   <img class="mySlides img-responsive" src="img/portfolio/1/rna4.png">
   <img class="mySlides img-responsive" src="img/portfolio/1/rna5.png">

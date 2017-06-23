@@ -16,8 +16,18 @@ Baxter Plays Checkers is a project which was created for the ME 495 robot part-m
 Checkers is a ROS Python package which grants Baxter the ability to play the aforementioned game against a human opponent. The software features a 5 node network which helps Baxter autonomously recognize the state of the game, compute valid moves, and accurately transport red checkers pieces between squares using inverse kinematics and OpenCV. Below is a video of Baxter responding to a move.
 
 <center><h3>Demo</h3></center>
-<center><iframe src="https://player.vimeo.com/video/195051138" width="500" height="700" frameborder="0" volume="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/195051138">BaxtersMove</a> from <a href="https://vimeo.com/numsr">MSR at Northwestern</a> on <a href="https://vimeo.com">Vimeo</a>.</p></center>
+<div class="row">
+  <div class="col-lg-3 col-md-2">
+  </div>
+  <div class="col-lg-6 col-md-8 col-sm-12">
+    <div class="embed-responsive embed-responsive-5by7">
+      <iframe src="https://player.vimeo.com/video/195051138" frameborder="0" volume="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+  <p><a href="https://vimeo.com/195051138">BaxtersMove</a> from <a href="https://vimeo.com/numsr">MSR at Northwestern</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  </div>
+  <div class="col-lg-3 col-md-2">
+  </div>
+</div>
 
 <center><h3>My Teammates</h3></center>
 <a href="https://github.com/gcurry730">Gale Curry</a><br>

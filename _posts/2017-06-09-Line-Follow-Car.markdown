@@ -41,8 +41,8 @@ description:
 <div class="slide-content w3-display-container" style="max-width:800px">
   <img class="slidesMod6 img-responsive" src= "img/portfolio/6/line_follow_car.png">
   <img class="slidesMod6 img-responsive" src= "img/portfolio/6/car_cad.png">
-  <img class="slidesMod6 img-responsive" src="img/portfolio/6/4in_wheel_cad.png">
-  <img class="slidesMod6 img-responsive" src="img/portfolio/6/motor_bracket_cad.png">
+  <img class="slidesMod6 img-responsive" src= "img/portfolio/6/4in_wheel_cad.png">
+  <img class="slidesMod6 img-responsive" src= "img/portfolio/6/motor_bracket_cad.png">
 </div>
 
 <center>
