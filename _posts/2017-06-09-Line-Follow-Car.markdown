@@ -35,7 +35,7 @@ description:
   </div>
   <div class="col-lg-8 col-md-10 col-sm-12">
     <div class="embed-responsive embed-responsive-16by9" style="center">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=wmvf4Z9TsZw" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/wmvf4Z9TsZw?ecver=1" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
   <div class="col-lg-2 col-md-1">
