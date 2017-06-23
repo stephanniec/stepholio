@@ -11,7 +11,7 @@ client: ME 495 Embedded Systems in Robotics
 category: Software Development
 ---
 <center><h3>Overview</h3></center>
-Baxter Plays Checkers was created for the ME 495 robot part-manipulation competition at Northwestern. During the final exam, teams comprised of 4-6 students were asked to showcase a fun and original demonstration using a Baxter Research Robot to pick up and place objects.
+Baxter Plays Checkers is a project which was created for the ME 495 robot part-manipulation competition at Northwestern. During the final exam, teams comprised of 4-6 students were asked to showcase a fun and original demonstration using a Baxter Research Robot to pick up and place objects.
 
 Checkers is a ROS Python package which grants Baxter the ability to play the aforementioned game against a human opponent. The software features a 5 node network which helps Baxter autonomously recognize the state of the game, compute valid moves, and accurately transport red checkers pieces between squares using inverse kinematics and OpenCV. Below is a video of Baxter responding to a move.
 
