@@ -42,7 +42,7 @@ To regulate current, the best PI gains were found to be Kp = 45 mV/mA and Ki = 1
 <img src="img/portfolio/4/best_cubic.png" class="img-responsive">
 <center><b>Figure 2</b>: Evaluation of System's Ability to Follow a Trajectory. Blue denotes the reference cubic wave, while red denotes the actual motor positions read by the encoder.</center>
 <br>
-To track position, the best PID gains were found to be Kp = -2.5 mA/deg, Ki = 0 mA/deg, and Kd = -100 mA/deg. These values were derived from the test shown in <b>Figure 2</b>. During testing, the motor was able to hit the correct angles roughly around the desired times. Minor overshoot occurred after 1.0s due to delayed changes in current. In hold mode, position recovery worked only when perturbations moved the inertial load bar less than 1080&deg; away from the reference angle.
+To track position, the best PID gains were found to be Kp = -2.5 mA/deg, Ki = 0 mA/deg, and Kd = -100 mA/deg. These values were derived from the test shown in <b>Figure 2</b>. During testing, the motor was able to hit the correct angles roughly around the desired times. Minor overshoot occurred after 1.0s due to delayed changes in current. In hold mode, position recovery worked only when the inertial load bar was perturbed less than 1080&deg; away from its original orientation.
 
 <center><h3>Results</h3></center>
 <div class="row">
@@ -57,7 +57,7 @@ To track position, the best PID gains were found to be Kp = -2.5 mA/deg, Ki = 0 
   </div>
 </div>
 <br>
-This video shows how the motor behaves when a -100% duty cycle and a 100% duty cycle are sent to the PIC32 sequentially. During testing, the motor was able to reach its maximum speed within 5 seconds.
+This video shows how the motor behaves when a -100% duty cycle, a 100% duty cycle and a 0% duty cycle are sent to the PIC32 sequentially. During testing, the motor was able to reach its maximum speed within 5 seconds.
 
 <div class="row">
   <div class="col-lg-2 col-md-1">

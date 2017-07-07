@@ -24,13 +24,13 @@ Subterranean robotic navigation and operation is important to a sundry of tasks,
 This prototype consists of 5 main components. When powered, an Archimedes screw mounted at the head of the robot will spin to part granular media and pull the robot forward. This is attached to an adapter plate which fits snugly around a DC motor shaft. A cylindrical cap on the motor itself prevents granules from falling into the exposed gear box. Wedged inside the protective cap are wings which will prevent the body of the robot from rotating with the screw. Lastly, an elongated hemisphere housing unit covers the back of the robot to shield the soldered wire junctions from wear and tear.
 
 <center><h4>Wings</h4></center>
-<img src= "img/portfolio/7/wings.png" width="600" class="img-responsive">
+<img class="img-responsive" src= "img/portfolio/7/wings.png" width="600">
 * Isoceles Triangle PLA 38.9mm
 * Rectangle PLA 44.6mm
 * Curved PLA 44.4mm
 
 <center><h4>Screw Heads</h4></center>
-<img src= "img/portfolio/7/screws.png" width="600" class="img-responsive">
+<img class="img-responsive" src= "img/portfolio/7/screws.png" width="600">
 * 2-turns PLA 58.67mm
 * 3-turns PLA 58.67mm
 * 4-turns PLA 58.67mm
@@ -44,7 +44,7 @@ This prototype consists of 5 main components. When powered, an Archimedes screw 
 <b>Testing Ground</b><br>
 For prototyping, a tank of poppy seeds was used. Poppy seeds were chosen because the granules are roughly uniform in size. Before each test, the bed was fluidized to ensure even packing throughout the media. Below is a GIF of the bed being fluidized.
 
-<img src="img/portfolio/7/fluidize.gif" class="img-responsive">
+<img class="img-responsive" src="img/portfolio/7/fluidize.gif">
 
 <b>Alpha 1.0</b><br>
 Iso triangle wings | 3-loop screw<br>
@@ -73,7 +73,7 @@ II. Robot stayed in place and rotated, but to a lesser degree than Alpha 1.1.
 
 III. Robot was able to submerge itself completely. It briefly exhibited the ability to translate in the xy-plane but would eventually resurface. Stayed under the seeds for a significantly longer period of time than the other prototypes.
 
-<img src="img/portfolio/7/alpha_1p2_move.gif" class="img-responsive">
+<img class="img-responsive" src="img/portfolio/7/alpha_1p2_move.gif">
 
 <b>Conclusions</b>
 <ol>

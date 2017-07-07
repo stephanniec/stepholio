@@ -29,7 +29,7 @@ Note, this package is also compatible with the Sawyer research robot.
 <a href="#sources">VIII. Related Resources</a><br>
 
 <center><h3 id="status">Current Status</h3></center>
-<img src="img/portfolio/5/omnivc_demo.gif" class="img-responsive"><br>
+<img class="img-responsive" src="img/portfolio/5/omnivc_demo.gif"><br>
 The above GIF showcases how accurately the velocity controller is able to follow the target frame as the user moves the goal configuration with the Geomagic Touch's stylus.
 
 <center><h3 id="hardware">Hardware</h3></center>
@@ -90,7 +90,7 @@ This node controls Baxter's right gripper when the controller is enabled via the
 
 <center><h3 id="ps3con">PS3 Controls</h3></center>
 
-<img src="img/portfolio/5/ps3_controls.png" class="img-responsive">
+<img class="img-responsive" src="img/portfolio/5/ps3_controls.png">
 
 ~~~
 L1 button : Hold down to enable robot movement

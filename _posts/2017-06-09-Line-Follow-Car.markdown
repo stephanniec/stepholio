@@ -12,9 +12,12 @@ category: Mechatronics
 description:
 ---
 <center><h3>Overview</h3></center>
+The Line Following Robot was built for the 2017 Tech Cup at Northwestern. To compete, student participants were required to write an Android application which parses data streamed from a phone camera to locate the racetrack and modulate the velocity of two wheels for steering. All car frames were fabricated using laser cut acrylic and 3D printed PLA components and limited to a 12" wide by 12" high space.
+
+USB communication was used to send information from the phone to a PIC32 PCB board.
 
 <center><h3>The Map</h3></center>
-<img src= "img/portfolio/6/techcup2017.png" width="600" class="img-responsive">
+<img class="img-responsive" src= "img/portfolio/6/techcup2017.png" width="600">
 
 <center><h3>Motor Control</h3></center>
 <div class="row">
