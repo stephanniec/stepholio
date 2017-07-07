@@ -17,7 +17,7 @@ The Line Following Robot was built for the 2017 Tech Cup at Northwestern. To com
 USB communication was used to send information from the phone to a PIC32 PCB board.
 
 <center><h3>The Map</h3></center>
-<img class="img-responsive" src= "img/portfolio/6/techcup2017.png" width="600">
+<img class="img-responsive" src="img/portfolio/6/techcup2017.png" width="600">
 
 <center><h3>Motor Control</h3></center>
 <div class="row">
@@ -53,10 +53,10 @@ USB communication was used to send information from the phone to a PIC32 PCB boa
 </style>
 
 <div class="slide-content w3-display-container" style="max-width:800px">
-  <img class="slidesMod6 img-responsive" src= "img/portfolio/6/line_follow_car.png">
-  <img class="slidesMod6 img-responsive" src= "img/portfolio/6/car_cad.png">
-  <img class="slidesMod6 img-responsive" src= "img/portfolio/6/4in_wheel_cad.png">
-  <img class="slidesMod6 img-responsive" src= "img/portfolio/6/motor_bracket_cad.png">
+  <img class="slidesMod6 img-responsive" src="img/portfolio/6/line_follow_car.png">
+  <img class="slidesMod6 img-responsive" src="img/portfolio/6/car_cad.png">
+  <img class="slidesMod6 img-responsive" src="img/portfolio/6/4in_wheel_cad.png">
+  <img class="slidesMod6 img-responsive" src="img/portfolio/6/motor_bracket_cad.png">
 </div>
 
 <center>

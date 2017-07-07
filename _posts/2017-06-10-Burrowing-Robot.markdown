@@ -20,17 +20,17 @@ Subterranean robotic navigation and operation is important to a sundry of tasks,
 <a href="#cite">III. Acknowledgements</a>
 
 <center><h3 id="plane_proto">Screw-Head Plane Prototype</h3></center>
-<img src= "img/portfolio/7/screw_head_plane.png" width="600" class="img-responsive">
+<img class="img-responsive" src="img/portfolio/7/screw_head_plane.png" width="600">
 This prototype consists of 5 main components. When powered, an Archimedes screw mounted at the head of the robot will spin to part granular media and pull the robot forward. This is attached to an adapter plate which fits snugly around a DC motor shaft. A cylindrical cap on the motor itself prevents granules from falling into the exposed gear box. Wedged inside the protective cap are wings which will prevent the body of the robot from rotating with the screw. Lastly, an elongated hemisphere housing unit covers the back of the robot to shield the soldered wire junctions from wear and tear.
 
 <center><h4>Wings</h4></center>
-<img class="img-responsive" src= "img/portfolio/7/wings.png" width="600">
+<img class="img-responsive" src="img/portfolio/7/wings.png" width="600">
 * Isoceles Triangle PLA 38.9mm
 * Rectangle PLA 44.6mm
 * Curved PLA 44.4mm
 
 <center><h4>Screw Heads</h4></center>
-<img class="img-responsive" src= "img/portfolio/7/screws.png" width="600">
+<img class="img-responsive" src="img/portfolio/7/screws.png" width="600">
 * 2-turns PLA 58.67mm
 * 3-turns PLA 58.67mm
 * 4-turns PLA 58.67mm

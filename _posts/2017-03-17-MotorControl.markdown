@@ -34,12 +34,12 @@ In this mode, the motor executes a desired trajectory specified by time points (
 
 <center><h3>Gain Tuning</h3></center>
 
-<img src="img/portfolio/4/best_ITEST.png" class="img-responsive">
+<img class="img-responsive" src="img/portfolio/4/best_ITEST.png">
 <center><b>Figure 1</b>: Evaluation of System's Ability to Replicate a 200mA Square Wave. Blue denotes the reference square wave, while red denotes the actual current measured across the motor.</center>
 <br>
 To regulate current, the best PI gains were found to be Kp = 45 mV/mA and Ki = 1.75 mV/mA. These values were determined from the test shown in <b>Figure 1</b>. Although some lag is present, the red curve exhibits minimal overshoot and successfully toggles between $$\pm{200}$$ mA.
 
-<img src="img/portfolio/4/best_cubic.png" class="img-responsive">
+<img class="img-responsive" src="img/portfolio/4/best_cubic.png">
 <center><b>Figure 2</b>: Evaluation of System's Ability to Follow a Trajectory. Blue denotes the reference cubic wave, while red denotes the actual motor positions read by the encoder.</center>
 <br>
 To track position, the best PID gains were found to be Kp = -2.5 mA/deg, Ki = 0 mA/deg, and Kd = -100 mA/deg. These values were derived from the test shown in <b>Figure 2</b>. During testing, the motor was able to hit the correct angles roughly around the desired times. Minor overshoot occurred after 1.0s due to delayed changes in current. In hold mode, position recovery worked only when the inertial load bar was perturbed less than 1080&deg; away from its original orientation.
