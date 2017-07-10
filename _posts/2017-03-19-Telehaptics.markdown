@@ -1,6 +1,6 @@
 ---
 title: Geomagic Touch Driven Control of a Robotic Arm
-subtitle: Human-Machine Interaction
+subtitle: Software Development
 layout: default
 modal-id: 5
 date: 2017-03-19
@@ -8,7 +8,7 @@ thumbnail: telehapticstemp.png
 alt: image-alt
 project-date: January 2017 - May 2017
 client: Northwestern MSR
-category: Human-Machine Interaction
+category: Software Development
 description: An Intuitive Interface which Allows Human Users to Feel What Robots Feel
 ---
 <center><h3>Overview</h3></center>

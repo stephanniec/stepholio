@@ -12,14 +12,13 @@ category: Mechatronics
 description:
 ---
 <center><h3>Overview</h3></center>
-The Line Following Robot was built for the 2017 Tech Cup at Northwestern. To compete, student participants were required to write an Android application which parses data streamed from a phone camera to locate the racetrack and modulate the velocity of two wheels for steering. All car frames were fabricated using laser cut acrylic and 3D printed PLA components and limited to a 12" wide by 12" high space.
-
-USB communication was used to send information from the phone to a PIC32 PCB board.
+The Line Following Robot was built for the 2017 Tech Cup at Northwestern. It uses an Android application coupled with a custom PIC32 PCB to steer a differential drive vehicle around a gray racetrack. Information is transfered between the application and the microcontroller via USB communication. Aside from sending velocity commands, the phone also provides power to two N20 brushed DC gearhead motors.
 
 <center><h3>The Map</h3></center>
 <img class="img-responsive" src="img/portfolio/6/techcup2017.png" width="600">
+This is the course that the robots competed on. Although it is not shown, a 12" wide x 12" tall plywood gate served as the start and finish point on the map.
 
-<center><h3>Motor Control</h3></center>
+<center><h3>Motor Control</h3></center>  
 <div class="row">
   <div class="col-lg-2 col-md-1">
   </div>
@@ -31,6 +30,7 @@ USB communication was used to send information from the phone to a PIC32 PCB boa
   <div class="col-lg-2 col-md-1">
   </div>
 </div>
+
 
 <center><h3>Path Detection</h3></center>
 <div class="row">
@@ -94,6 +94,13 @@ function slideshow(n) {
   dots[ind-1].className += "btn btn-primary";
 }
 </script>
+
+<center><h3>Results</h3></center>
+<b>Overcoming Inertia</b>
+During testing, the robot would only forward when duty cycles greater than 75% were used. As a result, the car would either shoot off the road too quickly for the path recovery algorithm to find the racetrack, or not move at all. To generate higher torque at lower motor velocities, 2 inch wheels (instead of the original 4 inch ones) were used in the final design.  
+
+<b>Lighting</b>
+The images captured by the rear phone camera sometimes looked strangely yellow. This primarily occurred whenever the car would emerge from a patch of shade and into a sunlit region. If the transition happened during a turn, the image processing algorithm would incorrectly identify the racetrack's location. To remedy this, OpenCV should have been used to raise the application's frame rate. 
 
 <center><h3>Related Resources</h3></center>
 To download or read more about the Line Following Robot and other small mechatronics projects, please head on over to the <a href="https://github.com/stephanniec/stephanniec_ME433_2017">stephanniec_ME433_2017</a> Github repository.
