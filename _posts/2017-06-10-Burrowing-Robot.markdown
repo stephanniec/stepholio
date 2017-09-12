@@ -21,37 +21,41 @@ Subterranean robotic navigation and operation is important to a sundry of tasks,
 
 <center><h3 id="plane_proto">Screw-Head Plane Prototype</h3></center>
 <img class="img-responsive" src="img/portfolio/7/screw_head_plane.png" width="600">
-This prototype consists of 5 main components. When powered, an Archimedes screw mounted at the head of the robot will spin to part granular media and pull the robot forward. This is attached to an adapter plate which fits snugly around a DC motor shaft. A cylindrical cap on the motor itself prevents granules from falling into the exposed gear box. Wedged inside the protective cap are wings which will prevent the body of the robot from rotating with the screw. Lastly, an elongated hemisphere housing unit covers the back of the robot to shield the soldered wire junctions from wear and tear.
+This prototype consists of 5 main components. When powered, an Archimedes screw mounted at the head of the robot will spin to part granular media and pull the robot forward. This is attached to an adapter plate which fits snugly around the shaft of a DC motor. A cylindrical cap on the motor itself prevents granules from falling into the exposed gear box. Wedged inside the protective cap are wings which will prevent the body of the robot from rotating with the screw. Lastly, an elongated hemisphere housing unit covers the back of the robot to shield the soldered wire junctions from wear and tear. Note, a modular robot was created to make testing different combinations of screws and wing shapes easier.
 
 <center><h4>Wings</h4></center>
 <img class="img-responsive" src="img/portfolio/7/wings.png" width="600">
-* Isoceles Triangle PLA 38.9mm
-* Rectangle PLA 44.6mm
-* Curved PLA 44.4mm
+* Isoceles Triangle PLA 38.9mm long
+* Rectangle PLA 44.6mm long
+* Curved PLA 44.4mm long
 
 <center><h4>Screw Heads</h4></center>
 <img class="img-responsive" src="img/portfolio/7/screws.png" width="600">
-* 2-turns PLA 58.67mm
-* 3-turns PLA 58.67mm
-* 4-turns PLA 58.67mm
+* 2-turns PLA 58.67mm long
+* 3-turns PLA 58.67mm long
+* 4-turns PLA 58.67mm long
 
 <center><h3 id="plane_eval">Screw-Head Prototype Performance</h3></center>
 <b>TRIAL I</b><br>
-`Objective:` Test different wing and screw pitch permutations<br>
-`Tests`: Submerged swimming (I), Surface swimming (II), Burrowing (III) <br>
+`Date:` June 11, 2017 <br>
+`Objective:` Test different wing and screw pitch permutations <br>
+`Tests:` <br>
+I. Submerged swimming (I) - Robot starts inside the poppy seed bed with its wings parallel to the bottom of the tank <br>
+II. Surface swimming (II) - Robot starts on top of the poppy seed bed with its wings parallel to the bottom of the tank <br>
+III. Burrowing (III) - Robot starts upside down with the screw head pointed at the surface of the poppy seed bed <br>
 `Goal:` To design and create a plane-like prototype which allows the robot to move consistently through the poppy seeds in 1D
 
 <b>Testing Ground</b><br>
 For prototyping, a tank of poppy seeds was used. Poppy seeds were chosen because the granules are roughly uniform in size. Before each test, the bed was fluidized to ensure even packing throughout the media. Below is a GIF of the bed being fluidized.
 
 <img class="img-responsive" src="img/portfolio/7/fluidize.gif">
-
+<b>Observations</b><br>
 <b>Alpha 1.0</b><br>
 Iso triangle wings | 3-loop screw<br>
 <br>
-I. Robot was unable to travel linearly. It simply would rotate about the z-axis, then tilt up about the x-axis and resurface.
+I. Robot was unable to travel linearly. It would simply rotate in the horizontal plane, tilt up (about the axis its wings lie on) and resurface.
 
-II. Robot simply spun in place. Did not travel linearly nor rotate.
+II. Robot spun in place in the horizontal plane. Did not travel linearly.
 
 III. Robot was able to submerge itself but would quickly resurface.
 
@@ -60,43 +64,40 @@ Rectangle wings | 3-loop screw<br>
 <br>
 I. Robot was unable to travel linearly. It simply would rotate, then resurface at a rate faster than Alpha 1.0.
 
-II. Robot stayed in place but rotated about the z-axis significantly.
+II. Robot stayed in place, but rotated in the horizontal plane much more than Alpha 1.0.
 
 III. Robot was able to submerge itself. Resurfaced much faster than Alpha 1.0.
 
 <b>Alpha 1.2</b><br>
 Curved wings | 3-loop screw<br>
 <br>
-I. Robot was unable to travel linearly. It simply would rotate, then resurface. Of all the submerged swimming tests conducted, however, this robot was able to stay underground the longest.
+I. Robot was unable to travel linearly. It simply would rotate, then resurface. Of all the submerged swimming tests conducted, however, this robot stayed under the longest.
 
-II. Robot stayed in place and rotated, but to a lesser degree than Alpha 1.1.
+II. Robot stayed in place, but rotated in the horizontal plane to a lesser degree than Alpha 1.1.
 
-III. Robot was able to submerge itself completely. It briefly exhibited the ability to translate in the xy-plane but would eventually resurface. Stayed under the seeds for a significantly longer period of time than the other prototypes.
+III. Robot was able to submerge itself completely. It briefly exhibited the ability to translate horizontally but would eventually resurface. Stayed under the seeds for a significantly longer period of time than the other prototypes.
 
 <img class="img-responsive" src="img/portfolio/7/alpha_1p2_move.gif">
 
 <b>Conclusions</b>
-<ol>
-<li>Curved wings performed the best</li>
-  <ul>
-  <li>Triangle wings unable to resist torque</li>
-  <li>Rectangle wings create too much drag</li>
-  </ul>
-<li>Balance problem causes robot to tip up</li>
-<li>Center of mass of robot is below the wings</li>
-<li>Orienting the wings horizontally improves ability to move forward</li>
-<li>Motor does not have enough power to propel robot forward</li>
-  <ul>
-  <li> Motor has enough torque - does not stall</li>
-  <li> Motor does not spin fast enough - already using max rated voltage</li>
-  </ul>
-</ol><br>
+1. Curved wings performed the best
+  * Triangle wings unable to resist torque
+  * Rectangle wings create too much drag
+2. Robot is bottom-heavy
+  * Balance problem gradually causes it to tip up
+3. Center of mass of robot is below the wings
+  * Originally wanted COM to be between wings like in planes
+4. Orienting the wings horizontally rather than vertically improves the robot's ability to move forward
 
-<b>Future Direction</b>
+<br><b>Future Direction</b>
 1. Weigh down the front end of the robot
   * Use washers
   * Change screw material (e.g. metal)
-2. Change power supply - existing supply (12V, 8.4A) is not variable
+2. Change power supply
+  * Existing supply (12V, 8.4A) is not variable
+3. Add universal hinge and counter weight to allow the robot to dive
+  * Might be easier to adjust counter weight size to adjust COM instead of messing with screw features
+<br>
 
 <center><h3 id="cite">Acknowledgements</h3></center>
 <a href="http://www.mccormick.northwestern.edu/research-faculty/directory/affiliated/umbanhowar-paul.html">Dr. Paul Umbanhowar</a><br>

@@ -30,6 +30,7 @@ This is the course that the robots competed on. Although it is not shown, a 12" 
   <div class="col-lg-2 col-md-1">
   </div>
 </div>
+<br>
 This is a video of some preliminary motor control tests I performed using two 4-inch wheels I designed in OnShape and 3D printed in PLA. Outside the view of the camera, I am periodically sending new slider bar and switch values from a rudimentary Android application control panel to the PIC32. On the microcontroller, the slider positions are converted to PWM duty cycle percentages. The switch positions, on the other hand, are used to toggle boolean flags that dictate whether the voltage applied to the motors should be positive or negative.
 
 <center><h3>Path Detection</h3></center>
@@ -44,7 +45,8 @@ This is a video of some preliminary motor control tests I performed using two 4-
   <div class="col-lg-2 col-md-1">
   </div>
 </div>
-This video shows the racetrack centerline locater working as I walk around the map. The black lines indicate where the software believes a gray path exists. The red dots mark where the midpoint of each black line sits. 
+<br>
+This video shows the racetrack centerline locater working as I walk around the map. The black lines indicate where the software believes a gray path exists. The red dots mark where the midpoint of each black line is.
 
 <center><h3>Hardware</h3></center>
 <style>
@@ -99,7 +101,7 @@ function slideshow(n) {
 During testing, the robot would only forward when duty cycles greater than 75% were used. As a result, the car would either shoot off the road too quickly for the path recovery algorithm to find the racetrack, or not move at all. To generate higher torque at lower motor velocities, 2-inch wheels (instead of the original 4-inch ones) were used in the final design.  
 
 <b>Lighting</b><br>
-The images captured by the rear phone camera sometimes looked strangely yellow. This primarily occurred whenever the car would move from a patch of shade to a sunlit region. If the transition happened during a turn, the image processing algorithm would incorrectly identify the racetrack's location. To remedy this, only the bottom third of the camera feed was analyzed to give the camera more time to adjust to the ambient lighting. OpenCV also should have been used to raise the application's frame rate.
+The images captured by the rear phone camera sometimes looked strangely yellow. This primarily occurred whenever the car would move from a patch of shade to a sunlit region. If the transition happened during a turn, the image processing algorithm would incorrectly identify the racetrack's location. To remedy this, only the bottom third of the camera feed was analyzed to give the phone more time to adjust to ambient light changes. OpenCV also should have been used to raise the application's frame rate.
 
 <center><h3>Related Resources</h3></center>
 To download or read more about the Line Following Robot and other small mechatronics projects, please head on over to the <a href="https://github.com/stephanniec/stephanniec_ME433_2017">stephanniec_ME433_2017</a> Github repository.
