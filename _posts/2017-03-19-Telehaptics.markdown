@@ -30,7 +30,7 @@ Note, this package is also compatible with the Sawyer research robot.
 
 <center><h3 id="status">Current Status</h3></center>
 <img class="img-responsive" src="img/portfolio/5/omnivc_demo.gif"><br>
-The above GIF showcases how accurately the velocity controller is able to follow the target frame as the user moves the goal configuration with the Geomagic Touch's stylus.
+The above GIF showcases how accurately the velocity controller is able to follow the target frame as the user moves the goal configuration with the Geomagic Touch's stylus. In this demonstration, I am using Baxter to stack wooden blocks.  
 
 <center><h3 id="hardware">Hardware</h3></center>
 <b>Geomagic Touch</b> (formerly the Phantom Omni)<br>
