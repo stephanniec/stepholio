@@ -50,14 +50,14 @@ This video shows the racetrack centerline locater working as I walk around the m
 
 <center><h3>Hardware</h3></center>
 <style>
-.slidesMod6 {margin:0 auto;}
+.mySlidesCar {margin:0 auto;}
 </style>
 
 <div class="slide-content" style="max-width:800px">
-  <img class="slidesMod6 img-responsive" src="img/portfolio/6/line_follow_car.png">
-  <img class="slidesMod6 img-responsive" src="img/portfolio/6/car_cad.png">
-  <img class="slidesMod6 img-responsive" src="img/portfolio/6/4in_wheel_cad.png">
-  <img class="slidesMod6 img-responsive" src="img/portfolio/6/motor_bracket_cad.png">
+  <img class="mySlidesCar img-responsive" src="img/portfolio/6/line_follow_car.png">
+  <img class="mySlidesCar img-responsive" src="img/portfolio/6/car_cad.png">
+  <img class="mySlidesCar img-responsive" src="img/portfolio/6/4in_wheel_cad.png">
+  <img class="mySlidesCar img-responsive" src="img/portfolio/6/motor_bracket_cad.png">
 </div>
 
 <center>
@@ -81,7 +81,7 @@ function divNow(n) {
 
 function slideshow(n) {
   var i = 0;
-  var x = document.getElementsByClassName("slidesMod6");
+  var x = document.getElementsByClassName("mySlidesCar");
   var dots = document.getElementsByClassName("btn-primary");
   if (n > x.length) {ind = 1}
   if (n < 1) {ind = x.length}
