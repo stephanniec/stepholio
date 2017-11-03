@@ -1,6 +1,6 @@
 ---
 title: Walk Off the Pages I
-subtitle: Rapid Prototyping
+subtitle: Art
 layout: default
 modal-id: 9
 date: 2017-10-24
@@ -8,7 +8,7 @@ thumbnail:
 alt: image-alt
 project-date: October 2017
 client: DSGN 345 Computer Aided Manufacturing with NX
-category: Rapid Prototyping
+category: Art
 description: Transforming Imagination into Art
 ---
 <center><h3>Overview</h3></center>

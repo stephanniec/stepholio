@@ -1,6 +1,6 @@
 ---
-title: Augerbot Swing Optimization
-subtitle: System Simulation & Optimization
+title: Acrobot Swing Optimization
+subtitle: Simulation & Control
 layout: default
 modal-id: 8
 date: 2017-06-08
@@ -8,7 +8,7 @@ thumbnail:
 alt: image-alt
 project-date: June 2017
 client: ME 454 Nonlinear Optimal Control
-category: System Simulation & Optimization
+category: Simulation & Control
 description:
 ---
 <center><h3>Overview</h3></center>

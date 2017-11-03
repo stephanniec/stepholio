@@ -1,6 +1,6 @@
 ---
 title: Burrowing Robot
-subtitle: Rapid Prototyping
+subtitle: Prototyping
 layout: default
 modal-id: 7
 date: 2017-06-10
@@ -8,7 +8,7 @@ thumbnail: burrowing_robot_icon.png
 alt: image-alt
 project-date: March 2017 - December 2017
 client: Northwestern Department of Mechanical Engineering
-category: Rapid Prototyping
+category: Prototyping
 description: Exploring New Mechanisms for Moving Underground
 ---
 <center><h3>Overview</h3></center>
@@ -26,12 +26,12 @@ This prototype consists of 5 main components. When powered, an Archimedes screw 
 <center><h3 id="auger_eval">Augerbot Performance Evaluations</h3></center>
 <h4>TRIAL I</h4>
 `Date:` June 11, 2017 <br>
-`Objective:` Test different wing and helix pitch permutations <br>
+`Task:` Test different wing and helix pitch permutations <br>
 `Tests:` <br>
 I. Submerged swimming (I) - Robot starts inside the poppy seed bed with its wings parallel to the bottom of the tank <br>
 II. Surface swimming (II) - Robot starts on top of the poppy seed bed with its wings parallel to the bottom of the tank <br>
 III. Burrowing (III) - Robot starts upside down with the screw head pointed at the surface of the poppy seed bed <br>
-`Goal:` To design and create a plane-like prototype which will allow the robot to move consistently through the poppy seeds in 1D
+`Goal:` To empirically find the range of wing and helix parameters which will allow the robot to move consistently through the poppy seeds in 1D
 
 <b>Testing Ground</b><br>
 For prototyping, a tank of poppy seeds was used. Poppy seeds were chosen because the granules are roughly uniform in size. Before each test, the bed was fluidized to ensure even packing throughout the media. Below is a GIF of the bed being fluidized.

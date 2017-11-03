@@ -1,6 +1,6 @@
 ---
 title: Line Following Robot
-subtitle: Rapid Prototyping
+subtitle: Prototyping - Mechatronics
 layout: default
 modal-id: 6
 date: 2017-06-10
@@ -8,7 +8,7 @@ thumbnail: line_follow_car.gif
 alt: image-alt
 project-date: March 2017 - June 2017
 client: ME 433 Advanced Mechatronics
-category: Rapid Prototyping
+category: Prototyping - Mechatronics
 description:
 ---
 <center><h3>Overview</h3></center>
