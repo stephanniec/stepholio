@@ -1,5 +1,5 @@
 ---
-title: Geomagic Touch Driven Control of a Robotic Arm
+title: Bilateral Teleoperation of a Robotic Arm
 subtitle: Software Development
 layout: default
 modal-id: 5
@@ -14,7 +14,7 @@ description: An Intuitive Interface which Allows Human Users to Feel What Robots
 <center><h3>Overview</h3></center>
 Haptic perception is an intrinsic facet of the somatosensory system which grants humans the ability to discern valuable information about the shape, orientation, and texture of objects in the world. Without it, even simple motor tasks can become frustratingly difficult to perform. The lack of tactile feedback in commercially-available prosthetics and teleoperated devices is a debilitating obstacle which prevents amputees, technicians and surgeons from moving naturally and dexterously with artificial limbs.
 
-Telehaptics is a ROS Python package which brings to life a basic haptic interface using a Baxter research robot and the Geomagic Touch. When the stylus of a Touch is moved, Baxter's right arm will trace the same motions performed. If an external force is applied to the arm, the Touch will remotely apply the same forces to the user's hand. Together, these components form a closed-loop biofeedback system which enables users to experience something akin to telekinesis.
+Telehaptics is a ROS package which brings to life a basic haptic interface using a Baxter research robot and the Geomagic Touch. When the stylus of a Touch is moved, Baxter's right arm will trace the same motions performed. If an external force is applied to the arm, the Touch will remotely apply the same forces to the user's hand. Together, these components form a closed-loop biofeedback system which enables users to experience something akin to telekinesis.
 
 Note, this package is also compatible with the Sawyer research robot.
 
@@ -29,8 +29,19 @@ Note, this package is also compatible with the Sawyer research robot.
 <a href="#sources">VIII. Related Resources</a><br>
 
 <center><h3 id="status">Current Status</h3></center>
-<img class="img-responsive" src="img/portfolio/5/omnivc_demo.gif"><br>
-The above GIF showcases how accurately the velocity controller is able to follow the target frame as the user moves the goal configuration with the Geomagic Touch's stylus. In this demonstration, I am using Baxter to stack wooden blocks.  
+<div class="row">
+  <div class="col-lg-2 col-md-1">
+  </div>
+  <div class="col-lg-8 col-md-10 col-sm-12">
+    <div class="embed-responsive embed-responsive-16by9" style="center">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jN5jg7oP7UU?ecver=1" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-1">
+  </div>
+</div>
+<br>
+The video above shows how quickly and accurately the joint velocity controller enables a 7-DOF robotic arm to track a desired pose. In this demonstration, I am using the Geomagic Touch's stylus to manipulate a reference frame within Baxter's task space. 
 
 <center><h3 id="hardware">Hardware</h3></center>
 <b>Geomagic Touch</b> (formerly the Phantom Omni)<br>
@@ -38,8 +49,8 @@ The <a href="http://www.geomagic.com/en/products/phantom-omni/overview">Geomagic
 
 <b>PS3 DUALSHOCK3 Controller</b>
 
-<b>Rethink Robotics Baxter or Sawyer Robot</b><br>
-Baxter and Sawyer are two robots developed by <a href="http://www.rethinkrobotics.com/">Rethink Robotics</a> which sport 7 degree of freedom anthropomorphic arms.
+<b>Baxter and Sawyer</b><br>
+Baxter and Sawyer are two robots developed by <a href="http://www.rethinkrobotics.com/">Rethink Robotics</a> which sport 7-DOF anthropomorphic arms.
 
 <center><h3 id="ps3_nodes">PS3 Controller Nodes</h3></center><br>
 <b>joystick_reference_targets.py</b><br>
@@ -128,6 +139,6 @@ To download or read more about the Telehaptics ROS package, please head on over 
 <br>
 1. <a href="https://github.com/HuanWeng/ModernRobotics">ModernRobotics</a> Github repository
 2. <a href="https://github.com/gt-ros-pkg/hrl-kdl">hrl-kdl</a> Github repository
-3. S. Chiaverini, B. Siciliano, and O. Egeland, <a href="/files/leastsqrinvkin.pdf">Review of damped least-squares inverse kinematics with experiments on an industrial robot manipulator, IEEE Transactions on Control Systems Technology</a>, 2 (1994), pp. 123–134.
+3. S. Chiaverini, B. Siciliano, and O. Egeland, <a href="files/leastsqrinvkin.pdf">Review of damped least-squares inverse kinematics with experiments on an industrial robot manipulator, IEEE Transactions on Control Systems Technology</a>, 2 (1994), pp. 123–134.
 4. <a href="https://github.com/danepowell/phantom_omni">phantom_omni</a> Github repository
 5. <a href="https://github.com/MurpheyLab/trep_omni">trep_omni</a> Github repository
