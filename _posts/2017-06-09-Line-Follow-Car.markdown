@@ -94,9 +94,21 @@ function slideshow(n) {
   x[ind-1].style.display = "block";
   dots[ind-1].className += "btn btn-primary";
 }
-</script>
+</script><br>
 
 <center><h3>Results</h3></center>
+<div class="row">
+  <div class="col-lg-2 col-md-1">
+  </div>
+  <div class="col-lg-8 col-md-10 col-sm-12">
+    <div class="embed-responsive embed-responsive-16by9" style="center">
+      <iframe src="https://www.youtube.com/embed/88SlMiolcFQ?ecver=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-1">
+  </div>
+</div>
+<br>
 <b>Overcoming Inertia</b><br>
 During testing, the robot would only forward when duty cycles greater than 75% were used. As a result, the car would either shoot off the road too quickly for the path recovery algorithm to find the racetrack, or not move at all. To generate higher torque at lower motor velocities, 2-inch wheels (instead of the original 4-inch ones) were used in the final design.  
 

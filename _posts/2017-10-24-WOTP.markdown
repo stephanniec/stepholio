@@ -4,13 +4,20 @@ subtitle: Art
 layout: default
 modal-id: 9
 date: 2017-10-24
-thumbnail:
+thumbnail: wotp_ghibli.png
 alt: image-alt
-project-date: October 2017
+project-date: October 2017 - November 2017
 client: DSGN 345 Computer Aided Manufacturing with NX
 category: Art
 description: Transforming Imagination into Art
 ---
 <center><h3>Overview</h3></center>
+Walk Off the Pages is a multimedia art series which brings to life some of the wonderful stories, daydreams, and experiences that have stuck with me since childhood. It is a personal endeavor which I initially started to keep my right brain active and my love for working with my hands alive.
 
-<center><h3>Related Resources</h3></center>
+For the first piece, I used a CNC mill and a laser cutter to create a decorative display piece that honors two Studio Ghibli classics: Spirited Away (2001) and My Neighbor Totoro (1988). 
+
+<center><h3>CNC Milling</h3></center>
+
+<center><a href="files/dsgn345_final_report.pdf" class="btn btn-default btn-xl wow tada">View Full CNC Manufacturing Process</a></center>
+
+<center><h3>Laser Cutting</h3></center>
