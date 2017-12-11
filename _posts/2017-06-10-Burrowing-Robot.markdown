@@ -25,14 +25,14 @@ Numerous iterations of a modular robot mounted with an auger were fabricated. Ra
 <a href="#cite">VI. References</a>
 
 <center><h3 id="auger_proto">The Augerbot Prototype</h3></center>
-<img class="img-responsive" src="img/portfolio/7/screw_head_plane.png" width="600">
+<img class="img-responsive" src="img/portfolio/8/screw_head_plane.png" width="600">
 A robot with 5 main components was designed. When powered, an Archimedes screw mounted at the head of the robot spun to part granular media and pull the robot forward. This was attached to an adapter plate which fit snugly around the shaft of a DC motor. A cylindrical cap on the motor itself stopped granules from falling into an exposed gear box. Wedged inside the protective cap were wings which prevented the body of the robot from rotating with the screw. Lastly, an elongated hemispherical housing unit covered the back of the robot to shield soldered wire junctions from wear and tear. Note, a modular robot was created to make testing different combinations of screws and wing shapes easier.
 
 <center><h3 id="auger_eval">The Prototyping Process</h3></center>
 <b>Testing Ground</b><br>
 A 60" x 21" x 4" bed of poppy seeds was used to characterize the behavior of the robot in granular substrates. Poppy seeds were chosen because the granules are roughly uniform in size.
 
-<img class="img-responsive" src="img/portfolio/7/poppy_bed.png" width="600">
+<img class="img-responsive" src="img/portfolio/8/poppy_bed.png" width="600">
 
 <b>Experiments Performed</b><br>
 For every prototype created, the following qualitative experiments were conducted: <br>

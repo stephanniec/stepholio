@@ -15,7 +15,7 @@ description:
 The Line Following Robot was built for the 2017 Tech Cup at Northwestern. It uses an Android application coupled with a custom PIC32 PCB to steer a differential drive vehicle around a gray racetrack. Information is transfered between the application and the microcontroller via USB communication. Aside from sending velocity commands, the phone also provides power to two N20 brushed DC gearhead motors.
 
 <center><h3>The Map</h3></center>
-<img class="img-responsive" src="img/portfolio/6/techcup2017.png" width="600">
+<img class="img-responsive" src="img/portfolio/7/techcup2017.png" width="600">
 This is the course that the robots competed on. Although it is not shown, a 12" wide x 12" tall plywood gate served as both the start and finish line.
 
 <center><h3>Motor Control</h3></center>  
@@ -54,10 +54,10 @@ This video shows the racetrack centerline locater working as I walk around the m
 </style>
 
 <div class="slide-content" style="max-width:800px">
-  <img class="mySlidesCar img-responsive" src="img/portfolio/6/line_follow_car.png">
-  <img class="mySlidesCar img-responsive" src="img/portfolio/6/car_cad.png">
-  <img class="mySlidesCar img-responsive" src="img/portfolio/6/4in_wheel_cad.png">
-  <img class="mySlidesCar img-responsive" src="img/portfolio/6/motor_bracket_cad.png">
+  <img class="mySlidesCar img-responsive" src="img/portfolio/7/line_follow_car.png">
+  <img class="mySlidesCar img-responsive" src="img/portfolio/7/car_cad.png">
+  <img class="mySlidesCar img-responsive" src="img/portfolio/7/4in_wheel_cad.png">
+  <img class="mySlidesCar img-responsive" src="img/portfolio/7/motor_bracket_cad.png">
 </div>
 
 <center>
