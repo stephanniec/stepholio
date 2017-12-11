@@ -2,7 +2,7 @@
 title: Acrobot Swing Optimization
 subtitle: Simulation & Control
 layout: default
-modal-id: 8
+modal-id: 6
 date: 2017-06-08
 thumbnail:
 alt: image-alt

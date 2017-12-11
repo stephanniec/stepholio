@@ -1,14 +1,14 @@
 ---
 title: Burrowing Robot
-subtitle: Prototyping
+subtitle: Robophysics
 layout: default
-modal-id: 7
+modal-id: 8
 date: 2017-06-10
 thumbnail: burrowing_robot_icon.png
 alt: image-alt
 project-date: March 2017 - December 2017
 client: Northwestern Department of Mechanical Engineering
-category: Research - Applied Physics and Mathematics
+category: Robophysics
 description: Exploring New Mechanisms for Moving Underground
 ---
 <center><h3>Overview</h3></center>

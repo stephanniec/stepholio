@@ -2,7 +2,7 @@
 title: Line Following Robot
 subtitle: Prototyping - Mechatronics
 layout: default
-modal-id: 6
+modal-id: 7
 date: 2017-06-10
 thumbnail: line_follow_car.gif
 alt: image-alt
