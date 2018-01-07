@@ -4,7 +4,7 @@ subtitle: Simulation & Control
 layout: default
 modal-id: 6
 date: 2017-06-08
-thumbnail:
+thumbnail: yech.png
 alt: image-alt
 project-date: June 2017
 client: ME 454 Nonlinear Optimal Control
