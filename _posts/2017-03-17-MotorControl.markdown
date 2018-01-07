@@ -1,10 +1,10 @@
 ---
-title: PIC32 Control of a Brushed DC Motor
+title: Five Mode DC Motor Control
 subtitle: Prototyping - Mechatronics
 layout: default
 modal-id: 4
 date: 2017-03-19
-thumbnail: pic32_motor_track.gif
+thumbnail: pic32_motor_icon.png
 alt: image-alt
 project-date: March 2017
 client: ME 333 Introduction to Mechatronics

@@ -4,7 +4,7 @@ subtitle: Prototyping - Mechatronics
 layout: default
 modal-id: 7
 date: 2017-06-10
-thumbnail: line_follow_car.gif
+thumbnail: line_follow_icon.png
 alt: image-alt
 project-date: March 2017 - June 2017
 client: ME 433 Advanced Mechatronics
@@ -54,17 +54,17 @@ This video shows the racetrack centerline locater working as I walk around the m
 </style>
 
 <div class="slide-content" style="max-width:800px">
-  <img class="mySlidesCar img-responsive" src="img/portfolio/7/line_follow_car.png">
   <img class="mySlidesCar img-responsive" src="img/portfolio/7/car_cad.png">
   <img class="mySlidesCar img-responsive" src="img/portfolio/7/4in_wheel_cad.png">
   <img class="mySlidesCar img-responsive" src="img/portfolio/7/motor_bracket_cad.png">
+  <img class="mySlidesCar img-responsive" src="img/portfolio/7/line_follow_car.png">
 </div>
 
 <center>
-  <button type="button" class="btn btn-primary" onclick="divNow(1)">The Robot</button>
-  <button type="button" class="btn btn-primary" onclick="divNow(2)">Car Chassis</button>
-  <button type="button" class="btn btn-primary" onclick="divNow(3)">Wheels</button>
-  <button type="button" class="btn btn-primary" onclick="divNow(4)">Motor Brackets</button>
+  <button type="button" class="btn btn-primary" onclick="divNow(1)">Car Chassis</button>
+  <button type="button" class="btn btn-primary" onclick="divNow(2)">Wheels</button>
+  <button type="button" class="btn btn-primary" onclick="divNow(3)">Motor Brackets</button>
+  <button type="button" class="btn btn-primary" onclick="divNow(4)">Assembled Robot</button>
 </center>
 
 <script>

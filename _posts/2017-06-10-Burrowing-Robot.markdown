@@ -4,7 +4,7 @@ subtitle: Robophysics
 layout: default
 modal-id: 8
 date: 2017-06-10
-thumbnail: burrowing_robot_icon.png
+thumbnail: burrow_robot_icon.png
 alt: image-alt
 project-date: March 2017 - December 2017
 client: Northwestern Department of Mechanical Engineering

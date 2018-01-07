@@ -1,10 +1,10 @@
 ---
-title: Bilateral Teleoperation of a Robotic Arm
+title: Bilateral Teleoperation 
 subtitle: Software Development
 layout: default
 modal-id: 5
 date: 2017-03-19
-thumbnail: telehapticstemp.png
+thumbnail: omni_icon.png
 alt: image-alt
 project-date: January 2017 - May 2017
 client: Northwestern MSR
@@ -41,7 +41,7 @@ Note, this package is also compatible with the Sawyer research robot.
   </div>
 </div>
 <br>
-The video above shows how quickly and accurately the joint velocity controller enables a 7-DOF robotic arm to track a desired pose. In this demonstration, I am using the Geomagic Touch's stylus to manipulate a reference frame within Baxter's task space. 
+The video above shows how quickly and accurately the joint velocity controller enables a 7-DOF robotic arm to track a desired pose. In this demonstration, I am using the Geomagic Touch's stylus to manipulate a reference frame within Baxter's task space.
 
 <center><h3 id="hardware">Hardware</h3></center>
 <b>Geomagic Touch</b> (formerly the Phantom Omni)<br>

@@ -14,7 +14,7 @@ description: Transforming Imagination into Art
 <center><h3>Overview</h3></center>
 Walk Off the Pages is a multimedia art series which brings to life some of the wonderful stories, daydreams, and experiences that have stuck with me since childhood. It is a personal endeavor which I initially started to keep my right brain active and my love for working with my hands alive.
 
-For the first piece, I used a CNC mill and a laser cutter to create a decorative display piece that honors two Studio Ghibli classics: Spirited Away (2001) and My Neighbor Totoro (1988). 
+For the first piece, I used a CNC mill and a laser cutter to create a decorative display piece that honors two Studio Ghibli classics: Spirited Away (2001) and My Neighbor Totoro (1988).
 
 <center><h3>CNC Milling</h3></center>
 
