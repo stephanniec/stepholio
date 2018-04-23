@@ -1,6 +1,6 @@
 ---
-title: Walk Off the Pages I
-subtitle: Art
+title: Walk Off the Pages
+subtitle: Prototyping
 layout: default
 modal-id: 9
 date: 2017-10-24
@@ -8,16 +8,20 @@ thumbnail: wotp_ghibli.png
 alt: image-alt
 project-date: October 2017 - November 2017
 client: DSGN 345 Computer Aided Manufacturing with NX
-category: Art
+category: Prototyping
 description: Transforming Imagination into Art
 ---
 <center><h3>Overview</h3></center>
-Walk Off the Pages is a multimedia art series which brings to life some of the wonderful stories, daydreams, and experiences that have stuck with me since childhood. It is a personal endeavor which I initially started to keep my right brain active and my love for working with my hands alive.
+Walk Off the Pages is a multimedia art project which honors two Studio Ghibli classics: Spirited Away (2001) and My Neighbor Totoro (1988). It is a personal endeavor which I started to keep my creative juices flowing and love for working with my hands alive. The piece was modeled in SolidWorks, then fabricated using a CNC mill and a laser cutter.  
 
-For the first piece, I used a CNC mill and a laser cutter to create a decorative display piece that honors two Studio Ghibli classics: Spirited Away (2001) and My Neighbor Totoro (1988).
+<center><h3>The Aluminum Centerpiece</h3></center>
 
-<center><h3>CNC Milling</h3></center>
+The centerpiece is a 4" x 4" x 1.75" aluminum block which features the extruded silhouettes of Totoro and a small child dangling from a leaf. For a step-by-step description of how it was manufactured, please view the PDF linked below.
 
-<center><a href="files/dsgn345_final_report.pdf" class="btn btn-default btn-xl wow tada">View Full CNC Manufacturing Process</a></center>
+<center><a href="files/dsgn345_final_report.pdf" class="btn btn-default btn-xl wow tada">View Full CNC Manufacturing Process</a></center><br>
 
-<center><h3>Laser Cutting</h3></center>
+<center><h3>The Acrylic Display Case</h3></center>
+
+The display case is a 10" x 10" x 4" acrylic box with a decorative frame that highlights key images from both films. It contains a central compartment tailored to the dimensions of the aluminum block and internal scaffolding which supports the weight of the centerpiece along 5 of its 6 faces.
+
+A slideshow of the container's CAD model and laser cut components will be coming soon!
