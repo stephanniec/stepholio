@@ -12,7 +12,7 @@ category: Prototyping
 description: Transforming Imagination into Art
 ---
 <center><h3>Overview</h3></center>
-Walk Off the Pages is a multimedia art project which honors two Studio Ghibli classics: Spirited Away (2001) and My Neighbor Totoro (1988). It is a personal endeavor which I started to keep my creativity sharp and my love for hands-on building satisfied. The piece was modeled in SolidWorks, then fabricated using a CNC mill and a laser cutter.  
+Walk Off the Pages is a multimedia art project which honors two Studio Ghibli classics: Spirited Away (2001) and My Neighbor Totoro (1988). It is a personal endeavor which I started to keep my creativity alive and my love for hands-on building satisfied. The piece was modeled in SolidWorks, then fabricated using a CNC mill and a laser cutter.  
 
 <center><h3>The Aluminum Centerpiece</h3></center>
 
@@ -22,6 +22,6 @@ The centerpiece is a 4" x 4" x 1.75" aluminum block which features the extruded 
 
 <center><h3>The Acrylic Display Case</h3></center>
 <img class="img-responsive" src="img/portfolio/9/box_CAD.png" width="900">
-<center>Figure 1: A bird's eye view of the case's 3 layers visualized with CAD.</center>
+<center><b>Figure 1:</b> CAD Dissection of Display Case</center>
 <br>
-The display case is a 10" x 10" x 4" acrylic jigsaw puzzle with a decorative lid that highlights images from both films. It contains a central compartment tailored to the dimensions of the aluminum block, and internal scaffolding that supports the weight of the centerpiece along 5 of its 6 faces.
+The display case is a 10" x 10" x 4" acrylic box with a cosmetic lid that highlights images from both films. It consists of 18 pieces that snugly slot together like a jigsaw puzzle. Scaffolding inside the box supports the weight of the centerpiece along 5 of its 6 faces. Balsa wood was used to verify if the smallest features could be cut. Acrylic with a thickness of 0.25" was used for the final product.
