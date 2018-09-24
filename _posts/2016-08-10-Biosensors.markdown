@@ -1,6 +1,6 @@
 ---
 title: Fluorescent mRNA Biosensors for Screening Drugs
-subtitle: Medical Devices
+subtitle: Medical Device
 layout: default
 modal-id: 2
 date: 2016-08-10

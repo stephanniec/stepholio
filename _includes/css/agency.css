@@ -69,6 +69,7 @@ h7 {
     text-transform: uppercase;
     font-family:{{ site.data.template.font.primary }};
     font-weight: 200;
+    font-size: 18px;
 }
 
 .img-centered {

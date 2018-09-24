@@ -1,6 +1,6 @@
 ---
 title: VIRA
-subtitle: Medical Devices
+subtitle: Medical Device
 layout: default
 modal-id: 1
 date: 2015-06-15
@@ -110,7 +110,7 @@ The low-speed centrifuge is an auxilary tool which can be used by technicians to
 <img class="img-responsive" src="img/portfolio/1/ewhofficers.png" width="650">
 <center>2014-2015 Officers and Project Team Leads</center>
 <br>
-Engineering World Health (EWH) at UCSD is a burgeoning undergraduate organization dedicated to designing alternative, low-cost laboratory equipment for indigent populations. When I was a freshman, I was brought onboard the VIRA flagship design team as a member of the RNA extraction device group. From 2014 to 2015, I served as the RNA team lead. Prototype 1.0 was completed just before I graduated.
+Engineering World Health (EWH) at UCSD is an undergraduate organization that designs alternative, low-cost laboratory equipment for indigent populations. When I was a freshman, I was brought on board the VIRA design team as a member of the RNA extraction device group. As a researcher, I played a key role in developing the RNA device's fluidic system, fabricated mechanical components, designed circuitry, and supervised software development. From 2014 to 2015, I served as the RNA team lead. Prototype 1.0 was completed just before I graduated.
 
 <center><h3>Project Accolades</h3></center>
 May 2015 | 1st Place, San Diego Social Innovation Challenge ($10,000)<br>

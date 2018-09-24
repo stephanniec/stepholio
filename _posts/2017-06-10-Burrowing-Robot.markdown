@@ -1,6 +1,6 @@
 ---
 title: Burrowing Robot
-subtitle: Robophysics
+subtitle: Prototyping - Robophysics
 layout: default
 modal-id: 8
 date: 2017-06-10

@@ -1,5 +1,5 @@
 ---
-title: Bilateral Teleoperation 
+title: Teleoperated Robot Arm
 subtitle: Software Development
 layout: default
 modal-id: 5

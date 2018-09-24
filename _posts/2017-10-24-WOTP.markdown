@@ -1,6 +1,6 @@
 ---
 title: Walk Off the Pages
-subtitle: Prototyping
+subtitle: Design - Fabrication
 layout: default
 modal-id: 9
 date: 2017-10-24
@@ -12,7 +12,7 @@ category: Prototyping
 description: Transforming Imagination into Art
 ---
 <center><h3>Overview</h3></center>
-Walk Off the Pages is a multimedia art project which honors two Studio Ghibli classics: Spirited Away (2001) and My Neighbor Totoro (1988). It is a personal endeavor which I started to keep my creative juices flowing and love for working with my hands alive. The piece was modeled in SolidWorks, then fabricated using a CNC mill and a laser cutter.  
+Walk Off the Pages is a multimedia art project which honors two Studio Ghibli classics: Spirited Away (2001) and My Neighbor Totoro (1988). It is a personal endeavor which I started to keep my creativity sharp and my love for hands-on building satisfied. The piece was modeled in SolidWorks, then fabricated using a CNC mill and a laser cutter.  
 
 <center><h3>The Aluminum Centerpiece</h3></center>
 
@@ -21,7 +21,7 @@ The centerpiece is a 4" x 4" x 1.75" aluminum block which features the extruded 
 <center><a href="files/dsgn345_final_report.pdf" class="btn btn-default btn-xl wow tada">View Full CNC Manufacturing Process</a></center><br>
 
 <center><h3>The Acrylic Display Case</h3></center>
-
-The display case is a 10" x 10" x 4" acrylic box with a decorative frame that highlights key images from both films. It contains a central compartment tailored to the dimensions of the aluminum block and internal scaffolding which supports the weight of the centerpiece along 5 of its 6 faces.
-
-A slideshow of the container's CAD model and laser cut components will be coming soon!
+<img class="img-responsive" src="img/portfolio/9/box_CAD.png" width="900">
+<center>Figure 1: A bird's eye view of the case's 3 layers visualized with CAD.</center>
+<br>
+The display case is a 10" x 10" x 4" acrylic jigsaw puzzle with a decorative lid that highlights images from both films. It contains a central compartment tailored to the dimensions of the aluminum block, and internal scaffolding that supports the weight of the centerpiece along 5 of its 6 faces.
