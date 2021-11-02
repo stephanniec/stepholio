@@ -107,8 +107,8 @@ Although VIRA’s gel box mimics available electrophoresis devices, our product 
 The low-speed centrifuge is an auxilary tool which can be used by technicians to perform both RNA extraction and reverse transcription. The prototype includes an ABS 3D printed plate head with an anti-shear design that interfaces with a simple motor. The alpha model, which now sits in Maputo Central Hospital, is capable of applying up to 8,000 x <i>g</i> and runs off of a self-sufficient power source. The latter feature was added to help clinics work through power outages, which regularly occur in Mozambique.
 
 <center><h3>My Role</h3></center>
-<img class="img-responsive" src="img/portfolio/1/ewhofficers.png" width="650">
-<center>2014-2015 Officers and Project Team Leads</center>
+<!--- <img class="img-responsive" src="img/portfolio/1/ewhofficers.png" width="650">
+<center>2014-2015 Officers and Project Team Leads</center> --->
 <br>
 Engineering World Health (EWH) at UCSD is an undergraduate organization that designs alternative, low-cost laboratory equipment for indigent populations. When I was a freshman, I was brought on board the VIRA design team as a member of the RNA extraction device group. As a researcher, I played a key role in developing the RNA device's fluidic system, fabricated mechanical components, designed circuitry, and supervised software development. From 2014 to 2015, I served as the RNA team lead. Prototype 1.0 was completed just before I graduated.
 
